@@ -11,15 +11,6 @@ foreach ($xml->CcyTbl->CcyNtry as $currency) {
 
 echo time();
 
-/* $datetime1 = date_create('2016-06-01');
-$datetime2 = date_create('2018-09-21');
-
-// Calculates the difference between DateTime objects
-$interval = date_diff($datetime1, $datetime2);
-
-// Printing result in years & months format
-echo $interval; */
-
 
 ?>
 
