@@ -11,7 +11,6 @@ foreach ($xml->CcyTbl->CcyNtry as $currency) {
 
 echo time();
 
-
 ?>
 
 <!DOCTYPE html>
