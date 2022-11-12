@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<ISO_4217 Pblshd="2022-09-23" Tmestmp="1668258568">
+<ISO_4217 Pblshd="2022-09-23" Tmestmp="1668293508">
     <CcyTbl>
         <CcyNtry>
             <CtryNm>AFGHANISTAN</CtryNm>
@@ -31,7 +31,7 @@
             <Ccy>DZD</Ccy>
             <CcyNbr>012</CcyNbr>
             <CcyMnrUnts>2</CcyMnrUnts>
-            <rate>164.200302</rate>
+            <rate>164.494362</rate>
         </CcyNtry>
         <CcyNtry>
             <CtryNm>AMERICAN SAMOA</CtryNm>
@@ -254,7 +254,7 @@
             <Ccy>NOK</Ccy>
             <CcyNbr>578</CcyNbr>
             <CcyMnrUnts>2</CcyMnrUnts>
-            <rate>11.765769</rate>
+            <rate>11.755881</rate>
         </CcyNtry>
         <CcyNtry>
             <CtryNm>BRAZIL</CtryNm>
@@ -262,7 +262,7 @@
             <Ccy>BRL</Ccy>
             <CcyNbr>986</CcyNbr>
             <CcyMnrUnts>2</CcyMnrUnts>
-            <rate>6.292677</rate>
+            <rate>6.277498</rate>
         </CcyNtry>
         <CcyNtry>
             <CtryNm>BRITISH INDIAN OCEAN TERRITORY (THE)</CtryNm>
@@ -286,7 +286,7 @@
             <Ccy>BGN</Ccy>
             <CcyNbr>975</CcyNbr>
             <CcyMnrUnts>2</CcyMnrUnts>
-            <rate>2.232263</rate>
+            <rate>2.23357</rate>
         </CcyNtry>
         <CcyNtry>
             <CtryNm>BURKINA FASO</CtryNm>
@@ -382,7 +382,7 @@
             <Ccy>CNY</Ccy>
             <CcyNbr>156</CcyNbr>
             <CcyMnrUnts>2</CcyMnrUnts>
-            <rate>8.414455</rate>
+            <rate>8.414337</rate>
         </CcyNtry>
         <CcyNtry>
             <CtryNm>CHRISTMAS ISLAND</CtryNm>
@@ -509,7 +509,7 @@
             <Ccy>CZK</Ccy>
             <CcyNbr>203</CcyNbr>
             <CcyMnrUnts>2</CcyMnrUnts>
-            <rate>27.771241</rate>
+            <rate>27.770306</rate>
         </CcyNtry>
         <CcyNtry>
             <CtryNm>DENMARK</CtryNm>
@@ -861,7 +861,7 @@
             <Ccy>HKD</Ccy>
             <CcyNbr>344</CcyNbr>
             <CcyMnrUnts>2</CcyMnrUnts>
-            <rate>9.275912</rate>
+            <rate>9.277345</rate>
         </CcyNtry>
         <CcyNtry>
             <CtryNm>HUNGARY</CtryNm>
@@ -869,7 +869,7 @@
             <Ccy>HUF</Ccy>
             <CcyNbr>348</CcyNbr>
             <CcyMnrUnts>2</CcyMnrUnts>
-            <rate>463.32428</rate>
+            <rate>463.308364</rate>
         </CcyNtry>
         <CcyNtry>
             <CtryNm>ICELAND</CtryNm>
@@ -965,7 +965,7 @@
             <Ccy>JPY</Ccy>
             <CcyNbr>392</CcyNbr>
             <CcyMnrUnts>0</CcyMnrUnts>
-            <rate>164.310463</rate>
+            <rate>164.3223</rate>
         </CcyNtry>
         <CcyNtry>
             <CtryNm>JERSEY</CtryNm>
@@ -1426,7 +1426,7 @@
             <Ccy>NOK</Ccy>
             <CcyNbr>578</CcyNbr>
             <CcyMnrUnts>2</CcyMnrUnts>
-            <rate>11.765769</rate>
+            <rate>11.755881</rate>
         </CcyNtry>
         <CcyNtry>
             <CtryNm>OMAN</CtryNm>
@@ -1657,7 +1657,7 @@
             <Ccy>SAR</Ccy>
             <CcyNbr>682</CcyNbr>
             <CcyMnrUnts>2</CcyMnrUnts>
-            <rate>4.443984</rate>
+            <rate>4.450809</rate>
         </CcyNtry>
         <CcyNtry>
             <CtryNm>SENEGAL</CtryNm>
@@ -1807,7 +1807,7 @@
             <Ccy>NOK</Ccy>
             <CcyNbr>578</CcyNbr>
             <CcyMnrUnts>2</CcyMnrUnts>
-            <rate>11.765769</rate>
+            <rate>11.755881</rate>
         </CcyNtry>
         <CcyNtry>
             <CtryNm>SWEDEN</CtryNm>
@@ -1815,7 +1815,7 @@
             <Ccy>SEK</Ccy>
             <CcyNbr>752</CcyNbr>
             <CcyMnrUnts>2</CcyMnrUnts>
-            <rate>12.274663</rate>
+            <rate>12.2298</rate>
         </CcyNtry>
         <CcyNtry>
             <CtryNm>SWITZERLAND</CtryNm>
