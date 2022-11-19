@@ -9,65 +9,40 @@ if (file_exists("response.xml")) {
 
     //Pull each currency code into an array
     foreach ($xml->CcyTbl->CcyNtry as $country_currency) {
-        $needle = $country_currency->Ccy;
+        $needle = strtolower($country_currency->Ccy);
         array_push($currencies, $needle);
     }
 
     //remove duplicate currency codes from array
     $currencies = array_unique($currencies);
-
+    sort($currencies);
 
     // Create a new dom document with pretty formatting
     $doc = new DomDocument();
     $doc->formatOutput = true;
+    $outputFilename = "response.xml";
 
     // Add a root node to the document
     $root = $doc->createElement('currencies');
     $root = $doc->appendChild($root);
 
     // Loop through each row creating a <record> node with the correct data
+
     foreach ($currencies as $currency) {
-        $child = $doc->createElement($currency);
+        $currency = strtoupper($currency);
+        $container = $doc->createElement('currency_code');
+        $child = $doc->createElement("currency");
         $child = $container->appendChild($child);
+        $value = $doc->createTextNode($currency);
+        $value = $child->appendChild($value);
+        echo $currency . " ";
+        $root->appendChild($container);
     }
-    $root->appendChild($container);
+
 
     $strxml = $doc->saveXML();
     $handle = fopen($outputFilename, "w");
     fwrite($handle, $strxml);
     fclose($handle);
-
-
-
-
-
     fclose($my_read_file);
-
-
-/*     $currencies_and_countries = array("Foo" => "bar");
-
-    foreach ($currencies as $ccy) {
-        //add code to search xml file and add countries to assiciative array if currency codes match
-        foreach ($xml->CcyTbl->CcyNtry as $country) {
-            if ($country->Ccy == $ccy) {
-                if (!array_key_exists($ccy, $currencies_and_countries)) {
-                    $currencies_and_countries[$$ccy] = $country->CtryNm;
-                    echo " passed 2nd condition ";
-                    echo $currencies_and_countries[$ccy];
-                } else {
-                    $currencies_and_countries[$$ccy] = $currencies_and_countries[$$ccy] . "," . $country->CtryNm;
-                    echo " third condition passes ";
-                }
-            }
-        }
-    }
-
-    foreach ($currencies_and_countries as $ccy => $country) {
-        echo $ccy;
-        echo "<br> ";
-        echo $country;
-    }
-} else {
-    echo "This file already exists!";
-} 
-*/
+}
