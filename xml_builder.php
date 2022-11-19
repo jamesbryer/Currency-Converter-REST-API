@@ -16,17 +16,46 @@ if (file_exists("response.xml")) {
     //remove duplicate currency codes from array
     $currencies = array_unique($currencies);
 
-    $currencies_and_countries = array("Foo" => "bar");
+
+    // Create a new dom document with pretty formatting
+    $doc = new DomDocument();
+    $doc->formatOutput = true;
+
+    // Add a root node to the document
+    $root = $doc->createElement('currencies');
+    $root = $doc->appendChild($root);
+
+    // Loop through each row creating a <record> node with the correct data
+    foreach ($currencies as $currency) {
+        $child = $doc->createElement($currency);
+        $child = $container->appendChild($child);
+    }
+    $root->appendChild($container);
+
+    $strxml = $doc->saveXML();
+    $handle = fopen($outputFilename, "w");
+    fwrite($handle, $strxml);
+    fclose($handle);
+
+
+
+
+
+    fclose($my_read_file);
+
+
+/*     $currencies_and_countries = array("Foo" => "bar");
 
     foreach ($currencies as $ccy) {
         //add code to search xml file and add countries to assiciative array if currency codes match
         foreach ($xml->CcyTbl->CcyNtry as $country) {
             if ($country->Ccy == $ccy) {
                 if (!array_key_exists($ccy, $currencies_and_countries)) {
-                    $currencies_and_countries[$ccy] = $country->CtryNm;
+                    $currencies_and_countries[$$ccy] = $country->CtryNm;
                     echo " passed 2nd condition ";
+                    echo $currencies_and_countries[$ccy];
                 } else {
-                    $currencies_and_countries[$ccy] = $currencies_and_countries[$ccy] . "," . $country->CtryNm;
+                    $currencies_and_countries[$$ccy] = $currencies_and_countries[$$ccy] . "," . $country->CtryNm;
                     echo " third condition passes ";
                 }
             }
@@ -40,13 +69,5 @@ if (file_exists("response.xml")) {
     }
 } else {
     echo "This file already exists!";
-}
-
-/* $test = array("1" => "a", "2" => "b", "3" => "c");
-$item = "1";
-echo $test["1"];
-$test[$item] = "z";
-echo $test["1"];
-if ($test[$item]) {
-    echo "12345567890exists!";
-} */
+} 
+*/
