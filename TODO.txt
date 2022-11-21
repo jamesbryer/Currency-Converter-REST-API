@@ -1,0 +1,2 @@
+1. implement base currency into config file and retrieve base currency to concatenate into api endpoint
+2. get a functioning index.php

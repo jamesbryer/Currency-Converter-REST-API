@@ -1,10 +1,13 @@
 <?php
 
+include "conf.php";
+require "xml_builder.php";
+
 function check_rates_age($xml)
 {
-    //gets current Unix timestamp and timestamp from XML document - if document is older than 6 hours, calls update rates function
+    //gets current Unix timestamp and timestamp from XML document - if document is older than 12 hours, calls update rates function
     $current_time = time();
-    if (($current_time - $xml['Tmestmp']) > 21600) {
+    if (($current_time - $xml['Tmestmp']) > 43200) {
         update_rates($xml);
     } else {
         echo "Rates do not need updating!";
@@ -15,7 +18,6 @@ function update_rates($xml)
 {
     //uses curl to make API call
     $curl = curl_init();
-
     curl_setopt_array($curl, array(
         CURLOPT_URL => "https://api.apilayer.com/fixer/latest?base=GBP",
         CURLOPT_HTTPHEADER => array(
@@ -55,8 +57,26 @@ function update_rates($xml)
     echo "Rates updated!";
 }
 
-$filename = "iso_4217.xml";
-$xml = simplexml_load_file($filename);
-check_rates_age($xml);
 
-//TODO: create new XML file
+
+//function to check whether ISO file exists - if it doesn't, download it and build xml from it. RETURNS $XML 
+function check_files_exist()
+{
+    $filename = "iso_4217.xml";
+    //Try to load the file, if the file does not exist, download it from the url 
+    while (!file_exists($filename)) {
+        echo "File doesn't exist, downloading...";
+        $url = 'https://www.six-group.com/dam/download/financial-information/data-center/iso-currrency/lists/list-one.xml';
+        file_put_contents($filename, file_get_contents($url));
+    }
+    $xml = simplexml_load_file($filename) or die("ADD HTTP ERROR THING HERE");
+    //adds timestamp attribute to xml document and sets time to 0 so as to cause rates to be updated. 
+    $xml->addAttribute("Tmestmp", "0");
+    $xml = simplexml_load_file($filename) or die("ADD HTTP ERROR THING HERE");
+    //call build_xml from 
+    build_xml();
+    return $xml;
+}
+
+$xml = check_files_exist();
+check_rates_age($xml);
