@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <error_1000>
+        <conv>
+            <error>
+                <code>1000</code>
+                <msg>Required parameter is missing.</msg>
+            </error>
+        </conv>
+    </error_1000>
+    <error_1100>
+        <conv>
+            <error>
+                <code>1100</code>
+                <msg>Parameter not recognised.</msg>
+            </error>
+        </conv>
+    </error_1100>
+    <error_1200>
+        <conv>
+            <error>
+                <code>1200</code>
+                <msg>Currency type not recognised</msg>
+            </error>
+        </conv>
+    </error_1200>
+    <error_1300>
+        <conv>
+            <error>
+                <code>1300</code>
+                <msg>Currency amount must be a decimal number.</msg>
+            </error>
+        </conv>
+    </error_1300>
+    <error_1400>
+        <conv>
+            <error>
+                <code>1400</code>
+                <msg>Format must be xml or json.</msg>
+            </error>
+        </conv>
+    </error_1400>
+    <error_1500>
+        <conv>
+            <error>
+                <code>1500</code>
+                <msg>Error is service.</msg>
+            </error>
+        </conv>
+    </error_1500>
+</root>

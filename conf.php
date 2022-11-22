@@ -1,8 +1,8 @@
 <?php
 
-const CURRENCY_API_KEY = "Ra3niNeqTj1IWKnYIDkUTdaETgU2nV1x";
-const BUSE_CURRENCY = "GBP";
-const API_ENDPOINT = "https://api.apilayer.com/fixer/latest?base=";
+define("CURRENCY_API_KEY", "Ra3niNeqTj1IWKnYIDkUTdaETgU2nV1x");
+define("BASE_CURRENCY", "GBP");
+define("API_ENDPOINT", "https://api.apilayer.com/fixer/latest?base=");
 
 //ERROR MESSAGES 
 

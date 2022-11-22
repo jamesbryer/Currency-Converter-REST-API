@@ -1,23 +1,14 @@
 <?php
-function build_xml()
+
+include "conf.php";
+require "get_array_of_currencies.php";
+function build_xml($base_currency)
 {
     //A script to check whether the output XML files exists and create it if it does not using the ISO file
     //UPDATE IN FINAL TO IF FILE DOESNT EXIST !!!! ONLY RUNNING LIKE THIS FOR TESTING
     if (!file_exists("response.xml")) {
-        //load XML and use SimpleXML to convert to associative array
-        $filename = "iso_4217.xml";
-        $xml = simplexml_load_file($filename);
-        $currencies = array();
-
-        //Pull each currency code into an array
-        foreach ($xml->CcyTbl->CcyNtry as $country_currency) {
-            $code = strtolower($country_currency->Ccy);
-            array_push($currencies, $code);
-        }
-
-        //remove duplicate currency codes from array
-        $currencies = array_unique($currencies);
-        sort($currencies);
+        //call function to get list of currencies
+        $currencies = get_array_of_currencies();
 
         // Create a new dom document with pretty formatting
         $doc = new DomDocument();
@@ -31,12 +22,12 @@ function build_xml()
         $root_attribute->value = time();
         $root_attribute = $root->appendChild($root_attribute);
         $base_attribute = $doc->createAttribute('base');
-        $base_attribute->value = "";
+        $base_attribute->value = $base_currency;
+        $base_attribute = $root->appendChild($base_attribute);
 
         // Loop through each row creating a <record> node with the correct data
 
         foreach ($currencies as $currency) {
-            $currency = strtoupper($currency);
             $container = $doc->createElement('currency');
             $child = $doc->createElement("currency_code");
             $child = $container->appendChild($child);
