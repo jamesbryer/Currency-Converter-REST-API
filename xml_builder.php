@@ -29,7 +29,7 @@ function build_xml($base_currency)
 
         foreach ($currencies as $currency) {
             $container = $doc->createElement('currency');
-            $child = $doc->createElement("currency_code");
+            $child = $doc->createElement("code");
             $child = $container->appendChild($child);
             $value = $doc->createTextNode($currency);
             $value = $child->appendChild($value);

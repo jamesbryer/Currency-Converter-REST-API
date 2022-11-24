@@ -46,3 +46,5 @@ $from = $_GET["from"];
 $to = $_GET["to"];
 $amount = $_GET["amnt"];
 echo "FROM:  " . $from . " TO: " . $to . " AMOUNT: " . $amount;
+
+$converted_value = ($amount / $from * $to); // then round to 2dp

@@ -1,9 +1,6 @@
 <?xml version="1.0"?>
 <rates timestamp="1669112127" base="GBP">
   <currency>
-    <currency_code></currency_code>
-  </currency>
-  <currency>
     <currency_code>AED</currency_code>
   </currency>
   <currency>
