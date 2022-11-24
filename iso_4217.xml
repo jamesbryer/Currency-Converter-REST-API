@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ISO_4217 Pblshd="2022-09-23" Tmestmp="1669278514">
+<ISO_4217 Pblshd="2022-09-23" Tmestmp="1669311013">
 	<CcyTbl>
 		<CcyNtry>
 			<CtryNm>AFGHANISTAN</CtryNm>
@@ -7,7 +7,7 @@
 			<Ccy>AFN</Ccy>
 			<CcyNbr>971</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>106.933415</rate>
+			<rate>108.267078</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>ÅLAND ISLANDS</CtryNm>
@@ -15,7 +15,7 @@
 			<Ccy>EUR</Ccy>
 			<CcyNbr>978</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.159693</rate>
+			<rate>1.16562</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>ALBANIA</CtryNm>
@@ -23,7 +23,7 @@
 			<Ccy>ALL</Ccy>
 			<CcyNbr>008</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>135.29034</rate>
+			<rate>136.339776</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>ALGERIA</CtryNm>
@@ -31,7 +31,7 @@
 			<Ccy>DZD</Ccy>
 			<CcyNbr>012</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>167.103413</rate>
+			<rate>167.854683</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>AMERICAN SAMOA</CtryNm>
@@ -39,7 +39,7 @@
 			<Ccy>USD</Ccy>
 			<CcyNbr>840</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.206593</rate>
+			<rate>1.213062</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>ANDORRA</CtryNm>
@@ -47,7 +47,7 @@
 			<Ccy>EUR</Ccy>
 			<CcyNbr>978</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.159693</rate>
+			<rate>1.16562</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>ANGOLA</CtryNm>
@@ -55,7 +55,7 @@
 			<Ccy>AOA</Ccy>
 			<CcyNbr>973</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>616.490261</rate>
+			<rate>620.365233</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>ANGUILLA</CtryNm>
@@ -63,7 +63,7 @@
 			<Ccy>XCD</Ccy>
 			<CcyNbr>951</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>3.260877</rate>
+			<rate>3.278362</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>ANTARCTICA</CtryNm>
@@ -75,7 +75,7 @@
 			<Ccy>XCD</Ccy>
 			<CcyNbr>951</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>3.260877</rate>
+			<rate>3.278362</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>ARGENTINA</CtryNm>
@@ -83,7 +83,7 @@
 			<Ccy>ARS</Ccy>
 			<CcyNbr>032</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>198.802779</rate>
+			<rate>200.419022</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>ARMENIA</CtryNm>
@@ -91,7 +91,7 @@
 			<Ccy>AMD</Ccy>
 			<CcyNbr>051</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>472.498502</rate>
+			<rate>479.511762</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>ARUBA</CtryNm>
@@ -99,7 +99,7 @@
 			<Ccy>AWG</Ccy>
 			<CcyNbr>533</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>2.174883</rate>
+			<rate>2.186545</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>AUSTRALIA</CtryNm>
@@ -107,7 +107,7 @@
 			<Ccy>AUD</Ccy>
 			<CcyNbr>036</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.790303</rate>
+			<rate>1.793185</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>AUSTRIA</CtryNm>
@@ -115,7 +115,7 @@
 			<Ccy>EUR</Ccy>
 			<CcyNbr>978</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.159693</rate>
+			<rate>1.16562</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>AZERBAIJAN</CtryNm>
@@ -123,7 +123,7 @@
 			<Ccy>AZN</Ccy>
 			<CcyNbr>944</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>2.041411</rate>
+			<rate>2.06175</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>BAHAMAS (THE)</CtryNm>
@@ -131,7 +131,7 @@
 			<Ccy>BSD</Ccy>
 			<CcyNbr>044</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.194658</rate>
+			<rate>1.213529</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>BAHRAIN</CtryNm>
@@ -139,7 +139,7 @@
 			<Ccy>BHD</Ccy>
 			<CcyNbr>048</CcyNbr>
 			<CcyMnrUnts>3</CcyMnrUnts>
-			<rate>0.454887</rate>
+			<rate>0.457405</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>BANGLADESH</CtryNm>
@@ -147,7 +147,7 @@
 			<Ccy>BDT</Ccy>
 			<CcyNbr>050</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>121.867581</rate>
+			<rate>123.594398</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>BARBADOS</CtryNm>
@@ -155,7 +155,7 @@
 			<Ccy>BBD</Ccy>
 			<CcyNbr>052</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>2.41212</rate>
+			<rate>2.450151</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>BELARUS</CtryNm>
@@ -163,7 +163,7 @@
 			<Ccy>BYN</Ccy>
 			<CcyNbr>933</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>3.016626</rate>
+			<rate>3.064013</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>BELGIUM</CtryNm>
@@ -171,7 +171,7 @@
 			<Ccy>EUR</Ccy>
 			<CcyNbr>978</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.159693</rate>
+			<rate>1.16562</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>BELIZE</CtryNm>
@@ -179,7 +179,7 @@
 			<Ccy>BZD</Ccy>
 			<CcyNbr>084</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>2.408068</rate>
+			<rate>2.446069</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>BENIN</CtryNm>
@@ -187,7 +187,7 @@
 			<Ccy>XOF</Ccy>
 			<CcyNbr>952</CcyNbr>
 			<CcyMnrUnts>0</CcyMnrUnts>
-			<rate>759.344961</rate>
+			<rate>765.016691</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>BERMUDA</CtryNm>
@@ -195,7 +195,7 @@
 			<Ccy>BMD</Ccy>
 			<CcyNbr>060</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.206593</rate>
+			<rate>1.213062</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>BHUTAN</CtryNm>
@@ -203,7 +203,7 @@
 			<Ccy>INR</Ccy>
 			<CcyNbr>356</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>98.620828</rate>
+			<rate>99.031447</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>BHUTAN</CtryNm>
@@ -211,7 +211,7 @@
 			<Ccy>BTN</Ccy>
 			<CcyNbr>064</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>97.772206</rate>
+			<rate>99.050906</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>BOLIVIA (PLURINATIONAL STATE OF)</CtryNm>
@@ -219,7 +219,7 @@
 			<Ccy>BOB</Ccy>
 			<CcyNbr>068</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>8.2551</rate>
+			<rate>8.385188</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>BOLIVIA (PLURINATIONAL STATE OF)</CtryNm>
@@ -234,7 +234,7 @@
 			<Ccy>USD</Ccy>
 			<CcyNbr>840</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.206593</rate>
+			<rate>1.213062</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>BOSNIA AND HERZEGOVINA</CtryNm>
@@ -242,7 +242,7 @@
 			<Ccy>BAM</Ccy>
 			<CcyNbr>977</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>2.264107</rate>
+			<rate>2.28093</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>BOTSWANA</CtryNm>
@@ -250,7 +250,7 @@
 			<Ccy>BWP</Ccy>
 			<CcyNbr>072</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>15.455063</rate>
+			<rate>15.5979</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>BOUVET ISLAND</CtryNm>
@@ -258,7 +258,7 @@
 			<Ccy>NOK</Ccy>
 			<CcyNbr>578</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>11.990512</rate>
+			<rate>12.026665</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>BRAZIL</CtryNm>
@@ -266,7 +266,7 @@
 			<Ccy>BRL</Ccy>
 			<CcyNbr>986</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>6.466174</rate>
+			<rate>6.462958</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>BRITISH INDIAN OCEAN TERRITORY (THE)</CtryNm>
@@ -274,7 +274,7 @@
 			<Ccy>USD</Ccy>
 			<CcyNbr>840</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.206593</rate>
+			<rate>1.213062</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>BRUNEI DARUSSALAM</CtryNm>
@@ -282,7 +282,7 @@
 			<Ccy>BND</Ccy>
 			<CcyNbr>096</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.654122</rate>
+			<rate>1.668034</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>BULGARIA</CtryNm>
@@ -290,7 +290,7 @@
 			<Ccy>BGN</Ccy>
 			<CcyNbr>975</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>2.262003</rate>
+			<rate>2.278326</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>BURKINA FASO</CtryNm>
@@ -298,7 +298,7 @@
 			<Ccy>XOF</Ccy>
 			<CcyNbr>952</CcyNbr>
 			<CcyMnrUnts>0</CcyMnrUnts>
-			<rate>759.344961</rate>
+			<rate>765.016691</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>BURUNDI</CtryNm>
@@ -306,7 +306,7 @@
 			<Ccy>BIF</Ccy>
 			<CcyNbr>108</CcyNbr>
 			<CcyMnrUnts>0</CcyMnrUnts>
-			<rate>2472.941756</rate>
+			<rate>2511.905844</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>CABO VERDE</CtryNm>
@@ -314,7 +314,7 @@
 			<Ccy>CVE</Ccy>
 			<CcyNbr>132</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>127.644912</rate>
+			<rate>128.593379</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>CAMBODIA</CtryNm>
@@ -322,7 +322,7 @@
 			<Ccy>KHR</Ccy>
 			<CcyNbr>116</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>4941.183004</rate>
+			<rate>5017.746959</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>CAMEROON</CtryNm>
@@ -330,7 +330,7 @@
 			<Ccy>XAF</Ccy>
 			<CcyNbr>950</CcyNbr>
 			<CcyMnrUnts>0</CcyMnrUnts>
-			<rate>759.377746</rate>
+			<rate>765.038756</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>CANADA</CtryNm>
@@ -338,7 +338,7 @@
 			<Ccy>CAD</Ccy>
 			<CcyNbr>124</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.611718</rate>
+			<rate>1.61788</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>CAYMAN ISLANDS (THE)</CtryNm>
@@ -346,7 +346,7 @@
 			<Ccy>KYD</Ccy>
 			<CcyNbr>136</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>0.995562</rate>
+			<rate>1.011177</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>CENTRAL AFRICAN REPUBLIC (THE)</CtryNm>
@@ -354,7 +354,7 @@
 			<Ccy>XAF</Ccy>
 			<CcyNbr>950</CcyNbr>
 			<CcyMnrUnts>0</CcyMnrUnts>
-			<rate>759.377746</rate>
+			<rate>765.038756</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>CHAD</CtryNm>
@@ -362,7 +362,7 @@
 			<Ccy>XAF</Ccy>
 			<CcyNbr>950</CcyNbr>
 			<CcyMnrUnts>0</CcyMnrUnts>
-			<rate>759.377746</rate>
+			<rate>765.038756</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>CHILE</CtryNm>
@@ -370,7 +370,7 @@
 			<Ccy>CLP</Ccy>
 			<CcyNbr>152</CcyNbr>
 			<CcyMnrUnts>0</CcyMnrUnts>
-			<rate>1105.782241</rate>
+			<rate>1104.311493</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>CHILE</CtryNm>
@@ -378,7 +378,7 @@
 			<Ccy>CLF</Ccy>
 			<CcyNbr>990</CcyNbr>
 			<CcyMnrUnts>4</CcyMnrUnts>
-			<rate>0.040075</rate>
+			<rate>0.040021</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>CHINA</CtryNm>
@@ -386,7 +386,7 @@
 			<Ccy>CNY</Ccy>
 			<CcyNbr>156</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>8.626414</rate>
+			<rate>8.675583</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>CHRISTMAS ISLAND</CtryNm>
@@ -394,7 +394,7 @@
 			<Ccy>AUD</Ccy>
 			<CcyNbr>036</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.790303</rate>
+			<rate>1.793185</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>COCOS (KEELING) ISLANDS (THE)</CtryNm>
@@ -402,7 +402,7 @@
 			<Ccy>AUD</Ccy>
 			<CcyNbr>036</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.790303</rate>
+			<rate>1.793185</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>COLOMBIA</CtryNm>
@@ -410,7 +410,7 @@
 			<Ccy>COP</Ccy>
 			<CcyNbr>170</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>5892.225922</rate>
+			<rate>5942.477584</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>COLOMBIA</CtryNm>
@@ -425,7 +425,7 @@
 			<Ccy>KMF</Ccy>
 			<CcyNbr>174</CcyNbr>
 			<CcyMnrUnts>0</CcyMnrUnts>
-			<rate>574.398116</rate>
+			<rate>577.478041</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>CONGO (THE DEMOCRATIC REPUBLIC OF THE)</CtryNm>
@@ -433,7 +433,7 @@
 			<Ccy>CDF</Ccy>
 			<CcyNbr>976</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>2473.515233</rate>
+			<rate>2486.778256</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>CONGO (THE)</CtryNm>
@@ -441,7 +441,7 @@
 			<Ccy>XAF</Ccy>
 			<CcyNbr>950</CcyNbr>
 			<CcyMnrUnts>0</CcyMnrUnts>
-			<rate>759.377746</rate>
+			<rate>765.038756</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>COOK ISLANDS (THE)</CtryNm>
@@ -449,7 +449,7 @@
 			<Ccy>NZD</Ccy>
 			<CcyNbr>554</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.9331</rate>
+			<rate>1.935429</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>COSTA RICA</CtryNm>
@@ -457,7 +457,7 @@
 			<Ccy>CRC</Ccy>
 			<CcyNbr>188</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>725.029801</rate>
+			<rate>736.642995</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>CÔTE D'IVOIRE</CtryNm>
@@ -465,7 +465,7 @@
 			<Ccy>XOF</Ccy>
 			<CcyNbr>952</CcyNbr>
 			<CcyMnrUnts>0</CcyMnrUnts>
-			<rate>759.344961</rate>
+			<rate>765.016691</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>CROATIA</CtryNm>
@@ -473,7 +473,7 @@
 			<Ccy>HRK</Ccy>
 			<CcyNbr>191</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>8.751297</rate>
+			<rate>8.796884</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>CUBA</CtryNm>
@@ -481,7 +481,7 @@
 			<Ccy>CUP</Ccy>
 			<CcyNbr>192</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>31.974703</rate>
+			<rate>32.146155</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>CUBA</CtryNm>
@@ -489,7 +489,7 @@
 			<Ccy>CUC</Ccy>
 			<CcyNbr>931</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.206593</rate>
+			<rate>1.213062</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>CURAÇAO</CtryNm>
@@ -497,7 +497,7 @@
 			<Ccy>ANG</Ccy>
 			<CcyNbr>532</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>2.153139</rate>
+			<rate>2.187035</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>CYPRUS</CtryNm>
@@ -505,7 +505,7 @@
 			<Ccy>EUR</Ccy>
 			<CcyNbr>978</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.159693</rate>
+			<rate>1.16562</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>CZECHIA</CtryNm>
@@ -513,7 +513,7 @@
 			<Ccy>CZK</Ccy>
 			<CcyNbr>203</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>28.253691</rate>
+			<rate>28.458085</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>DENMARK</CtryNm>
@@ -521,7 +521,7 @@
 			<Ccy>DKK</Ccy>
 			<CcyNbr>208</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>8.624719</rate>
+			<rate>8.668411</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>DJIBOUTI</CtryNm>
@@ -529,7 +529,7 @@
 			<Ccy>DJF</Ccy>
 			<CcyNbr>262</CcyNbr>
 			<CcyMnrUnts>0</CcyMnrUnts>
-			<rate>212.676831</rate>
+			<rate>215.585261</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>DOMINICA</CtryNm>
@@ -537,7 +537,7 @@
 			<Ccy>XCD</Ccy>
 			<CcyNbr>951</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>3.260877</rate>
+			<rate>3.278362</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>DOMINICAN REPUBLIC (THE)</CtryNm>
@@ -545,7 +545,7 @@
 			<Ccy>DOP</Ccy>
 			<CcyNbr>214</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>64.964671</rate>
+			<rate>66.268829</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>ECUADOR</CtryNm>
@@ -553,7 +553,7 @@
 			<Ccy>USD</Ccy>
 			<CcyNbr>840</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.206593</rate>
+			<rate>1.213062</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>EGYPT</CtryNm>
@@ -561,7 +561,7 @@
 			<Ccy>EGP</Ccy>
 			<CcyNbr>818</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>29.609661</rate>
+			<rate>29.816107</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>EL SALVADOR</CtryNm>
@@ -569,7 +569,7 @@
 			<Ccy>SVC</Ccy>
 			<CcyNbr>222</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>10.453404</rate>
+			<rate>10.617941</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>EL SALVADOR</CtryNm>
@@ -577,7 +577,7 @@
 			<Ccy>USD</Ccy>
 			<CcyNbr>840</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.206593</rate>
+			<rate>1.213062</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>EQUATORIAL GUINEA</CtryNm>
@@ -585,7 +585,7 @@
 			<Ccy>XAF</Ccy>
 			<CcyNbr>950</CcyNbr>
 			<CcyMnrUnts>0</CcyMnrUnts>
-			<rate>759.377746</rate>
+			<rate>765.038756</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>ERITREA</CtryNm>
@@ -593,7 +593,7 @@
 			<Ccy>ERN</Ccy>
 			<CcyNbr>232</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>18.098889</rate>
+			<rate>18.195937</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>ESTONIA</CtryNm>
@@ -601,7 +601,7 @@
 			<Ccy>EUR</Ccy>
 			<CcyNbr>978</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.159693</rate>
+			<rate>1.16562</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>ESWATINI</CtryNm>
@@ -609,7 +609,7 @@
 			<Ccy>SZL</Ccy>
 			<CcyNbr>748</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>20.521856</rate>
+			<rate>20.652269</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>ETHIOPIA</CtryNm>
@@ -617,7 +617,7 @@
 			<Ccy>ETB</Ccy>
 			<CcyNbr>230</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>63.8242</rate>
+			<rate>64.831561</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>EUROPEAN UNION</CtryNm>
@@ -625,7 +625,7 @@
 			<Ccy>EUR</Ccy>
 			<CcyNbr>978</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.159693</rate>
+			<rate>1.16562</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>FALKLAND ISLANDS (THE) [MALVINAS]</CtryNm>
@@ -633,7 +633,7 @@
 			<Ccy>FKP</Ccy>
 			<CcyNbr>238</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.002622</rate>
+			<rate>1.007998</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>FAROE ISLANDS (THE)</CtryNm>
@@ -641,7 +641,7 @@
 			<Ccy>DKK</Ccy>
 			<CcyNbr>208</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>8.624719</rate>
+			<rate>8.668411</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>FIJI</CtryNm>
@@ -649,7 +649,7 @@
 			<Ccy>FJD</Ccy>
 			<CcyNbr>242</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>2.673688</rate>
+			<rate>2.68201</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>FINLAND</CtryNm>
@@ -657,7 +657,7 @@
 			<Ccy>EUR</Ccy>
 			<CcyNbr>978</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.159693</rate>
+			<rate>1.16562</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>FRANCE</CtryNm>
@@ -665,7 +665,7 @@
 			<Ccy>EUR</Ccy>
 			<CcyNbr>978</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.159693</rate>
+			<rate>1.16562</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>FRENCH GUIANA</CtryNm>
@@ -673,7 +673,7 @@
 			<Ccy>EUR</Ccy>
 			<CcyNbr>978</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.159693</rate>
+			<rate>1.16562</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>FRENCH POLYNESIA</CtryNm>
@@ -681,7 +681,7 @@
 			<Ccy>XPF</Ccy>
 			<CcyNbr>953</CcyNbr>
 			<CcyMnrUnts>0</CcyMnrUnts>
-			<rate>139.512292</rate>
+			<rate>140.260395</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>FRENCH SOUTHERN TERRITORIES (THE)</CtryNm>
@@ -689,7 +689,7 @@
 			<Ccy>EUR</Ccy>
 			<CcyNbr>978</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.159693</rate>
+			<rate>1.16562</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>GABON</CtryNm>
@@ -697,7 +697,7 @@
 			<Ccy>XAF</Ccy>
 			<CcyNbr>950</CcyNbr>
 			<CcyMnrUnts>0</CcyMnrUnts>
-			<rate>759.377746</rate>
+			<rate>765.038756</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>GAMBIA (THE)</CtryNm>
@@ -705,7 +705,7 @@
 			<Ccy>GMD</Ccy>
 			<CcyNbr>270</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>74.265274</rate>
+			<rate>74.664626</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>GEORGIA</CtryNm>
@@ -713,7 +713,7 @@
 			<Ccy>GEL</Ccy>
 			<CcyNbr>981</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>3.287964</rate>
+			<rate>3.305604</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>GERMANY</CtryNm>
@@ -721,7 +721,7 @@
 			<Ccy>EUR</Ccy>
 			<CcyNbr>978</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.159693</rate>
+			<rate>1.16562</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>GHANA</CtryNm>
@@ -729,7 +729,7 @@
 			<Ccy>GHS</Ccy>
 			<CcyNbr>936</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>17.322618</rate>
+			<rate>17.595138</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>GIBRALTAR</CtryNm>
@@ -737,7 +737,7 @@
 			<Ccy>GIP</Ccy>
 			<CcyNbr>292</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.002622</rate>
+			<rate>1.007998</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>GREECE</CtryNm>
@@ -745,7 +745,7 @@
 			<Ccy>EUR</Ccy>
 			<CcyNbr>978</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.159693</rate>
+			<rate>1.16562</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>GREENLAND</CtryNm>
@@ -753,7 +753,7 @@
 			<Ccy>DKK</Ccy>
 			<CcyNbr>208</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>8.624719</rate>
+			<rate>8.668411</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>GRENADA</CtryNm>
@@ -761,7 +761,7 @@
 			<Ccy>XCD</Ccy>
 			<CcyNbr>951</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>3.260877</rate>
+			<rate>3.278362</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>GUADELOUPE</CtryNm>
@@ -769,7 +769,7 @@
 			<Ccy>EUR</Ccy>
 			<CcyNbr>978</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.159693</rate>
+			<rate>1.16562</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>GUAM</CtryNm>
@@ -777,7 +777,7 @@
 			<Ccy>USD</Ccy>
 			<CcyNbr>840</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.206593</rate>
+			<rate>1.213062</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>GUATEMALA</CtryNm>
@@ -785,7 +785,7 @@
 			<Ccy>GTQ</Ccy>
 			<CcyNbr>320</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>9.30654</rate>
+			<rate>9.477422</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>GUERNSEY</CtryNm>
@@ -801,7 +801,7 @@
 			<Ccy>GNF</Ccy>
 			<CcyNbr>324</CcyNbr>
 			<CcyMnrUnts>0</CcyMnrUnts>
-			<rate>10294.461549</rate>
+			<rate>10455.989268</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>GUINEA-BISSAU</CtryNm>
@@ -809,7 +809,7 @@
 			<Ccy>XOF</Ccy>
 			<CcyNbr>952</CcyNbr>
 			<CcyMnrUnts>0</CcyMnrUnts>
-			<rate>759.344961</rate>
+			<rate>765.016691</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>GUYANA</CtryNm>
@@ -817,7 +817,7 @@
 			<Ccy>GYD</Ccy>
 			<CcyNbr>328</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>249.941623</rate>
+			<rate>254.018848</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>HAITI</CtryNm>
@@ -825,7 +825,7 @@
 			<Ccy>HTG</Ccy>
 			<CcyNbr>332</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>164.241895</rate>
+			<rate>169.282918</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>HAITI</CtryNm>
@@ -833,7 +833,7 @@
 			<Ccy>USD</Ccy>
 			<CcyNbr>840</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.206593</rate>
+			<rate>1.213062</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>HEARD ISLAND AND McDONALD ISLANDS</CtryNm>
@@ -841,7 +841,7 @@
 			<Ccy>AUD</Ccy>
 			<CcyNbr>036</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.790303</rate>
+			<rate>1.793185</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>HOLY SEE (THE)</CtryNm>
@@ -849,7 +849,7 @@
 			<Ccy>EUR</Ccy>
 			<CcyNbr>978</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.159693</rate>
+			<rate>1.16562</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>HONDURAS</CtryNm>
@@ -857,7 +857,7 @@
 			<Ccy>HNL</Ccy>
 			<CcyNbr>340</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>29.517714</rate>
+			<rate>29.983088</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>HONG KONG</CtryNm>
@@ -865,7 +865,7 @@
 			<Ccy>HKD</Ccy>
 			<CcyNbr>344</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>9.425599</rate>
+			<rate>9.469014</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>HUNGARY</CtryNm>
@@ -873,7 +873,7 @@
 			<Ccy>HUF</Ccy>
 			<CcyNbr>348</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>475.988817</rate>
+			<rate>481.937398</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>ICELAND</CtryNm>
@@ -881,7 +881,7 @@
 			<Ccy>ISK</Ccy>
 			<CcyNbr>352</CcyNbr>
 			<CcyMnrUnts>0</CcyMnrUnts>
-			<rate>170.129241</rate>
+			<rate>170.762917</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>INDIA</CtryNm>
@@ -889,7 +889,7 @@
 			<Ccy>INR</Ccy>
 			<CcyNbr>356</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>98.620828</rate>
+			<rate>99.031447</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>INDONESIA</CtryNm>
@@ -897,7 +897,7 @@
 			<Ccy>IDR</Ccy>
 			<CcyNbr>360</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>18895.662048</rate>
+			<rate>18975.329495</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>INTERNATIONAL MONETARY FUND (IMF) </CtryNm>
@@ -905,7 +905,7 @@
 			<Ccy>XDR</Ccy>
 			<CcyNbr>960</CcyNbr>
 			<CcyMnrUnts>N.A.</CcyMnrUnts>
-			<rate>0.913834</rate>
+			<rate>0.927087</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>IRAN (ISLAMIC REPUBLIC OF)</CtryNm>
@@ -913,7 +913,7 @@
 			<Ccy>IRR</Ccy>
 			<CcyNbr>364</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>51219.854285</rate>
+			<rate>51494.501348</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>IRAQ</CtryNm>
@@ -921,7 +921,7 @@
 			<Ccy>IQD</Ccy>
 			<CcyNbr>368</CcyNbr>
 			<CcyMnrUnts>3</CcyMnrUnts>
-			<rate>1743.623195</rate>
+			<rate>1771.122505</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>IRELAND</CtryNm>
@@ -929,7 +929,7 @@
 			<Ccy>EUR</Ccy>
 			<CcyNbr>978</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.159693</rate>
+			<rate>1.16562</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>ISLE OF MAN</CtryNm>
@@ -945,7 +945,7 @@
 			<Ccy>ILS</Ccy>
 			<CcyNbr>376</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>4.135017</rate>
+			<rate>4.148492</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>ITALY</CtryNm>
@@ -953,7 +953,7 @@
 			<Ccy>EUR</Ccy>
 			<CcyNbr>978</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.159693</rate>
+			<rate>1.16562</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>JAMAICA</CtryNm>
@@ -961,7 +961,7 @@
 			<Ccy>JMD</Ccy>
 			<CcyNbr>388</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>184.301252</rate>
+			<rate>186.981431</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>JAPAN</CtryNm>
@@ -969,7 +969,7 @@
 			<Ccy>JPY</Ccy>
 			<CcyNbr>392</CcyNbr>
 			<CcyMnrUnts>0</CcyMnrUnts>
-			<rate>167.797815</rate>
+			<rate>167.873893</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>JERSEY</CtryNm>
@@ -985,7 +985,7 @@
 			<Ccy>JOD</Ccy>
 			<CcyNbr>400</CcyNbr>
 			<CcyMnrUnts>3</CcyMnrUnts>
-			<rate>0.856558</rate>
+			<rate>0.860129</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>KAZAKHSTAN</CtryNm>
@@ -993,7 +993,7 @@
 			<Ccy>KZT</Ccy>
 			<CcyNbr>398</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>555.361699</rate>
+			<rate>564.429632</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>KENYA</CtryNm>
@@ -1001,7 +1001,7 @@
 			<Ccy>KES</Ccy>
 			<CcyNbr>404</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>147.544774</rate>
+			<rate>148.296475</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>KIRIBATI</CtryNm>
@@ -1009,7 +1009,7 @@
 			<Ccy>AUD</Ccy>
 			<CcyNbr>036</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.790303</rate>
+			<rate>1.793185</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>KOREA (THE DEMOCRATIC PEOPLE’S REPUBLIC OF)</CtryNm>
@@ -1017,7 +1017,7 @@
 			<Ccy>KPW</Ccy>
 			<CcyNbr>408</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1085.797764</rate>
+			<rate>1091.61993</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>KOREA (THE REPUBLIC OF)</CtryNm>
@@ -1025,7 +1025,7 @@
 			<Ccy>KRW</Ccy>
 			<CcyNbr>410</CcyNbr>
 			<CcyMnrUnts>0</CcyMnrUnts>
-			<rate>1604.104321</rate>
+			<rate>1608.629967</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>KUWAIT</CtryNm>
@@ -1033,7 +1033,7 @@
 			<Ccy>KWD</Ccy>
 			<CcyNbr>414</CcyNbr>
 			<CcyMnrUnts>3</CcyMnrUnts>
-			<rate>0.370858</rate>
+			<rate>0.372847</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>KYRGYZSTAN</CtryNm>
@@ -1041,7 +1041,7 @@
 			<Ccy>KGS</Ccy>
 			<CcyNbr>417</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>101.875504</rate>
+			<rate>102.424075</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>LAO PEOPLE’S DEMOCRATIC REPUBLIC (THE)</CtryNm>
@@ -1049,7 +1049,7 @@
 			<Ccy>LAK</Ccy>
 			<CcyNbr>418</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>20664.169768</rate>
+			<rate>20990.377447</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>LATVIA</CtryNm>
@@ -1057,7 +1057,7 @@
 			<Ccy>EUR</Ccy>
 			<CcyNbr>978</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.159693</rate>
+			<rate>1.16562</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>LEBANON</CtryNm>
@@ -1065,7 +1065,7 @@
 			<Ccy>LBP</Ccy>
 			<CcyNbr>422</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1823.740608</rate>
+			<rate>1835.047083</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>LESOTHO</CtryNm>
@@ -1073,7 +1073,7 @@
 			<Ccy>LSL</Ccy>
 			<CcyNbr>426</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>20.662915</rate>
+			<rate>20.773679</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>LESOTHO</CtryNm>
@@ -1081,7 +1081,7 @@
 			<Ccy>ZAR</Ccy>
 			<CcyNbr>710</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>20.465139</rate>
+			<rate>20.655661</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>LIBERIA</CtryNm>
@@ -1089,7 +1089,7 @@
 			<Ccy>LRD</Ccy>
 			<CcyNbr>430</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>185.815064</rate>
+			<rate>186.811085</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>LIBYA</CtryNm>
@@ -1097,7 +1097,7 @@
 			<Ccy>LYD</Ccy>
 			<CcyNbr>434</CcyNbr>
 			<CcyMnrUnts>3</CcyMnrUnts>
-			<rate>5.879174</rate>
+			<rate>5.955542</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>LIECHTENSTEIN</CtryNm>
@@ -1105,7 +1105,7 @@
 			<Ccy>CHF</Ccy>
 			<CcyNbr>756</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.137914</rate>
+			<rate>1.144446</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>LITHUANIA</CtryNm>
@@ -1113,7 +1113,7 @@
 			<Ccy>EUR</Ccy>
 			<CcyNbr>978</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.159693</rate>
+			<rate>1.16562</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>LUXEMBOURG</CtryNm>
@@ -1121,7 +1121,7 @@
 			<Ccy>EUR</Ccy>
 			<CcyNbr>978</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.159693</rate>
+			<rate>1.16562</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>MACAO</CtryNm>
@@ -1129,7 +1129,7 @@
 			<Ccy>MOP</Ccy>
 			<CcyNbr>446</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>9.618637</rate>
+			<rate>9.759199</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>NORTH MACEDONIA</CtryNm>
@@ -1137,7 +1137,7 @@
 			<Ccy>MKD</Ccy>
 			<CcyNbr>807</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>71.326724</rate>
+			<rate>71.859136</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>MADAGASCAR</CtryNm>
@@ -1145,7 +1145,7 @@
 			<Ccy>MGA</Ccy>
 			<CcyNbr>969</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>5177.598577</rate>
+			<rate>5265.047952</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>MALAWI</CtryNm>
@@ -1153,7 +1153,7 @@
 			<Ccy>MWK</Ccy>
 			<CcyNbr>454</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1226.255498</rate>
+			<rate>1245.53675</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>MALAYSIA</CtryNm>
@@ -1161,7 +1161,7 @@
 			<Ccy>MYR</Ccy>
 			<CcyNbr>458</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>5.423604</rate>
+			<rate>5.452694</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>MALDIVES</CtryNm>
@@ -1169,7 +1169,7 @@
 			<Ccy>MVR</Ccy>
 			<CcyNbr>462</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>18.557069</rate>
+			<rate>18.657051</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>MALI</CtryNm>
@@ -1177,7 +1177,7 @@
 			<Ccy>XOF</Ccy>
 			<CcyNbr>952</CcyNbr>
 			<CcyMnrUnts>0</CcyMnrUnts>
-			<rate>759.344961</rate>
+			<rate>765.016691</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>MALTA</CtryNm>
@@ -1185,7 +1185,7 @@
 			<Ccy>EUR</Ccy>
 			<CcyNbr>978</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.159693</rate>
+			<rate>1.16562</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>MARSHALL ISLANDS (THE)</CtryNm>
@@ -1193,7 +1193,7 @@
 			<Ccy>USD</Ccy>
 			<CcyNbr>840</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.206593</rate>
+			<rate>1.213062</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>MARTINIQUE</CtryNm>
@@ -1201,7 +1201,7 @@
 			<Ccy>EUR</Ccy>
 			<CcyNbr>978</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.159693</rate>
+			<rate>1.16562</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>MAURITANIA</CtryNm>
@@ -1216,7 +1216,7 @@
 			<Ccy>MUR</Ccy>
 			<CcyNbr>480</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>52.663455</rate>
+			<rate>52.948687</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>MAYOTTE</CtryNm>
@@ -1224,7 +1224,7 @@
 			<Ccy>EUR</Ccy>
 			<CcyNbr>978</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.159693</rate>
+			<rate>1.16562</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>MEMBER COUNTRIES OF THE AFRICAN DEVELOPMENT BANK GROUP</CtryNm>
@@ -1239,7 +1239,7 @@
 			<Ccy>MXN</Ccy>
 			<CcyNbr>484</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>23.362914</rate>
+			<rate>23.515102</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>MEXICO</CtryNm>
@@ -1254,7 +1254,7 @@
 			<Ccy>USD</Ccy>
 			<CcyNbr>840</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.206593</rate>
+			<rate>1.213062</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>MOLDOVA (THE REPUBLIC OF)</CtryNm>
@@ -1262,7 +1262,7 @@
 			<Ccy>MDL</Ccy>
 			<CcyNbr>498</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>22.997158</rate>
+			<rate>23.294858</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>MONACO</CtryNm>
@@ -1270,7 +1270,7 @@
 			<Ccy>EUR</Ccy>
 			<CcyNbr>978</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.159693</rate>
+			<rate>1.16562</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>MONGOLIA</CtryNm>
@@ -1278,7 +1278,7 @@
 			<Ccy>MNT</Ccy>
 			<CcyNbr>496</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>4127.024923</rate>
+			<rate>4149.154483</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>MONTENEGRO</CtryNm>
@@ -1286,7 +1286,7 @@
 			<Ccy>EUR</Ccy>
 			<CcyNbr>978</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.159693</rate>
+			<rate>1.16562</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>MONTSERRAT</CtryNm>
@@ -1294,7 +1294,7 @@
 			<Ccy>XCD</Ccy>
 			<CcyNbr>951</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>3.260877</rate>
+			<rate>3.278362</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>MOROCCO</CtryNm>
@@ -1302,7 +1302,7 @@
 			<Ccy>MAD</Ccy>
 			<CcyNbr>504</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>12.823993</rate>
+			<rate>12.961959</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>MOZAMBIQUE</CtryNm>
@@ -1310,7 +1310,7 @@
 			<Ccy>MZN</Ccy>
 			<CcyNbr>943</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>77.016509</rate>
+			<rate>77.429534</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>MYANMAR</CtryNm>
@@ -1318,7 +1318,7 @@
 			<Ccy>MMK</Ccy>
 			<CcyNbr>104</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>2508.781142</rate>
+			<rate>2548.337605</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>NAMIBIA</CtryNm>
@@ -1326,7 +1326,7 @@
 			<Ccy>NAD</Ccy>
 			<CcyNbr>516</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>20.662852</rate>
+			<rate>20.773662</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>NAMIBIA</CtryNm>
@@ -1334,7 +1334,7 @@
 			<Ccy>ZAR</Ccy>
 			<CcyNbr>710</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>20.465139</rate>
+			<rate>20.655661</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>NAURU</CtryNm>
@@ -1342,7 +1342,7 @@
 			<Ccy>AUD</Ccy>
 			<CcyNbr>036</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.790303</rate>
+			<rate>1.793185</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>NEPAL</CtryNm>
@@ -1350,7 +1350,7 @@
 			<Ccy>NPR</Ccy>
 			<CcyNbr>524</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>156.4315</rate>
+			<rate>158.481869</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>NETHERLANDS (THE)</CtryNm>
@@ -1358,7 +1358,7 @@
 			<Ccy>EUR</Ccy>
 			<CcyNbr>978</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.159693</rate>
+			<rate>1.16562</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>NEW CALEDONIA</CtryNm>
@@ -1366,7 +1366,7 @@
 			<Ccy>XPF</Ccy>
 			<CcyNbr>953</CcyNbr>
 			<CcyMnrUnts>0</CcyMnrUnts>
-			<rate>139.512292</rate>
+			<rate>140.260395</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>NEW ZEALAND</CtryNm>
@@ -1374,7 +1374,7 @@
 			<Ccy>NZD</Ccy>
 			<CcyNbr>554</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.9331</rate>
+			<rate>1.935429</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>NICARAGUA</CtryNm>
@@ -1382,7 +1382,7 @@
 			<Ccy>NIO</Ccy>
 			<CcyNbr>558</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>43.002504</rate>
+			<rate>43.680045</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>NIGER (THE)</CtryNm>
@@ -1390,7 +1390,7 @@
 			<Ccy>XOF</Ccy>
 			<CcyNbr>952</CcyNbr>
 			<CcyMnrUnts>0</CcyMnrUnts>
-			<rate>759.344961</rate>
+			<rate>765.016691</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>NIGERIA</CtryNm>
@@ -1398,7 +1398,7 @@
 			<Ccy>NGN</Ccy>
 			<CcyNbr>566</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>534.889655</rate>
+			<rate>537.932522</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>NIUE</CtryNm>
@@ -1406,7 +1406,7 @@
 			<Ccy>NZD</Ccy>
 			<CcyNbr>554</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.9331</rate>
+			<rate>1.935429</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>NORFOLK ISLAND</CtryNm>
@@ -1414,7 +1414,7 @@
 			<Ccy>AUD</Ccy>
 			<CcyNbr>036</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.790303</rate>
+			<rate>1.793185</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>NORTHERN MARIANA ISLANDS (THE)</CtryNm>
@@ -1422,7 +1422,7 @@
 			<Ccy>USD</Ccy>
 			<CcyNbr>840</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.206593</rate>
+			<rate>1.213062</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>NORWAY</CtryNm>
@@ -1430,7 +1430,7 @@
 			<Ccy>NOK</Ccy>
 			<CcyNbr>578</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>11.990512</rate>
+			<rate>12.026665</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>OMAN</CtryNm>
@@ -1438,7 +1438,7 @@
 			<Ccy>OMR</Ccy>
 			<CcyNbr>512</CcyNbr>
 			<CcyMnrUnts>3</CcyMnrUnts>
-			<rate>0.463914</rate>
+			<rate>0.467096</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>PAKISTAN</CtryNm>
@@ -1446,7 +1446,7 @@
 			<Ccy>PKR</Ccy>
 			<CcyNbr>586</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>268.08116</rate>
+			<rate>272.368735</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>PALAU</CtryNm>
@@ -1454,7 +1454,7 @@
 			<Ccy>USD</Ccy>
 			<CcyNbr>840</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.206593</rate>
+			<rate>1.213062</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>PALESTINE, STATE OF</CtryNm>
@@ -1466,7 +1466,7 @@
 			<Ccy>PAB</Ccy>
 			<CcyNbr>590</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.194663</rate>
+			<rate>1.213412</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>PANAMA</CtryNm>
@@ -1474,7 +1474,7 @@
 			<Ccy>USD</Ccy>
 			<CcyNbr>840</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.206593</rate>
+			<rate>1.213062</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>PAPUA NEW GUINEA</CtryNm>
@@ -1482,7 +1482,7 @@
 			<Ccy>PGK</Ccy>
 			<CcyNbr>598</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>4.209573</rate>
+			<rate>4.275867</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>PARAGUAY</CtryNm>
@@ -1490,7 +1490,7 @@
 			<Ccy>PYG</Ccy>
 			<CcyNbr>600</CcyNbr>
 			<CcyMnrUnts>0</CcyMnrUnts>
-			<rate>8594.588866</rate>
+			<rate>8706.035312</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>PERU</CtryNm>
@@ -1498,7 +1498,7 @@
 			<Ccy>PEN</Ccy>
 			<CcyNbr>604</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>4.594939</rate>
+			<rate>4.68442</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>PHILIPPINES (THE)</CtryNm>
@@ -1506,7 +1506,7 @@
 			<Ccy>PHP</Ccy>
 			<CcyNbr>608</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>68.475321</rate>
+			<rate>68.73142</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>PITCAIRN</CtryNm>
@@ -1514,7 +1514,7 @@
 			<Ccy>NZD</Ccy>
 			<CcyNbr>554</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.9331</rate>
+			<rate>1.935429</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>POLAND</CtryNm>
@@ -1522,7 +1522,7 @@
 			<Ccy>PLN</Ccy>
 			<CcyNbr>985</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>5.454712</rate>
+			<rate>5.479183</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>PORTUGAL</CtryNm>
@@ -1530,7 +1530,7 @@
 			<Ccy>EUR</Ccy>
 			<CcyNbr>978</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.159693</rate>
+			<rate>1.16562</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>PUERTO RICO</CtryNm>
@@ -1538,7 +1538,7 @@
 			<Ccy>USD</Ccy>
 			<CcyNbr>840</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.206593</rate>
+			<rate>1.213062</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>QATAR</CtryNm>
@@ -1546,7 +1546,7 @@
 			<Ccy>QAR</Ccy>
 			<CcyNbr>634</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>4.393183</rate>
+			<rate>4.416745</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>RÉUNION</CtryNm>
@@ -1554,7 +1554,7 @@
 			<Ccy>EUR</Ccy>
 			<CcyNbr>978</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.159693</rate>
+			<rate>1.16562</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>ROMANIA</CtryNm>
@@ -1562,7 +1562,7 @@
 			<Ccy>RON</Ccy>
 			<CcyNbr>946</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>5.722621</rate>
+			<rate>5.735238</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>RUSSIAN FEDERATION (THE)</CtryNm>
@@ -1570,7 +1570,7 @@
 			<Ccy>RUB</Ccy>
 			<CcyNbr>643</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>72.775635</rate>
+			<rate>73.226528</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>RWANDA</CtryNm>
@@ -1578,7 +1578,7 @@
 			<Ccy>RWF</Ccy>
 			<CcyNbr>646</CcyNbr>
 			<CcyMnrUnts>0</CcyMnrUnts>
-			<rate>1291.362516</rate>
+			<rate>1311.847565</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>SAINT BARTHÉLEMY</CtryNm>
@@ -1586,7 +1586,7 @@
 			<Ccy>EUR</Ccy>
 			<CcyNbr>978</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.159693</rate>
+			<rate>1.16562</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA</CtryNm>
@@ -1594,7 +1594,7 @@
 			<Ccy>SHP</Ccy>
 			<CcyNbr>654</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.661963</rate>
+			<rate>1.670872</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>SAINT KITTS AND NEVIS</CtryNm>
@@ -1602,7 +1602,7 @@
 			<Ccy>XCD</Ccy>
 			<CcyNbr>951</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>3.260877</rate>
+			<rate>3.278362</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>SAINT LUCIA</CtryNm>
@@ -1610,7 +1610,7 @@
 			<Ccy>XCD</Ccy>
 			<CcyNbr>951</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>3.260877</rate>
+			<rate>3.278362</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>SAINT MARTIN (FRENCH PART)</CtryNm>
@@ -1618,7 +1618,7 @@
 			<Ccy>EUR</Ccy>
 			<CcyNbr>978</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.159693</rate>
+			<rate>1.16562</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>SAINT PIERRE AND MIQUELON</CtryNm>
@@ -1626,7 +1626,7 @@
 			<Ccy>EUR</Ccy>
 			<CcyNbr>978</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.159693</rate>
+			<rate>1.16562</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>SAINT VINCENT AND THE GRENADINES</CtryNm>
@@ -1634,7 +1634,7 @@
 			<Ccy>XCD</Ccy>
 			<CcyNbr>951</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>3.260877</rate>
+			<rate>3.278362</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>SAMOA</CtryNm>
@@ -1642,7 +1642,7 @@
 			<Ccy>WST</Ccy>
 			<CcyNbr>882</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>3.317777</rate>
+			<rate>3.335567</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>SAN MARINO</CtryNm>
@@ -1650,7 +1650,7 @@
 			<Ccy>EUR</Ccy>
 			<CcyNbr>978</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.159693</rate>
+			<rate>1.16562</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>SAO TOME AND PRINCIPE</CtryNm>
@@ -1665,7 +1665,7 @@
 			<Ccy>SAR</Ccy>
 			<CcyNbr>682</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>4.534491</rate>
+			<rate>4.558581</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>SENEGAL</CtryNm>
@@ -1673,7 +1673,7 @@
 			<Ccy>XOF</Ccy>
 			<CcyNbr>952</CcyNbr>
 			<CcyMnrUnts>0</CcyMnrUnts>
-			<rate>759.344961</rate>
+			<rate>765.016691</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>SERBIA</CtryNm>
@@ -1681,7 +1681,7 @@
 			<Ccy>RSD</Ccy>
 			<CcyNbr>941</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>136.043374</rate>
+			<rate>136.760525</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>SEYCHELLES</CtryNm>
@@ -1689,7 +1689,7 @@
 			<Ccy>SCR</Ccy>
 			<CcyNbr>690</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>15.710765</rate>
+			<rate>15.956163</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>SIERRA LEONE</CtryNm>
@@ -1697,7 +1697,7 @@
 			<Ccy>SLL</Ccy>
 			<CcyNbr>694</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>21990.149964</rate>
+			<rate>22108.06333</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>SIERRA LEONE</CtryNm>
@@ -1705,7 +1705,7 @@
 			<Ccy>SLE</Ccy>
 			<CcyNbr>925</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>21.996106</rate>
+			<rate>22.114052</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>SINGAPORE</CtryNm>
@@ -1713,7 +1713,7 @@
 			<Ccy>SGD</Ccy>
 			<CcyNbr>702</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.659189</rate>
+			<rate>1.668566</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>SINT MAARTEN (DUTCH PART)</CtryNm>
@@ -1721,7 +1721,7 @@
 			<Ccy>ANG</Ccy>
 			<CcyNbr>532</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>2.153139</rate>
+			<rate>2.187035</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>SISTEMA UNITARIO DE COMPENSACION REGIONAL DE PAGOS "SUCRE"</CtryNm>
@@ -1736,7 +1736,7 @@
 			<Ccy>EUR</Ccy>
 			<CcyNbr>978</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.159693</rate>
+			<rate>1.16562</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>SLOVENIA</CtryNm>
@@ -1744,7 +1744,7 @@
 			<Ccy>EUR</Ccy>
 			<CcyNbr>978</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.159693</rate>
+			<rate>1.16562</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>SOLOMON ISLANDS</CtryNm>
@@ -1752,7 +1752,7 @@
 			<Ccy>SBD</Ccy>
 			<CcyNbr>090</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>9.930971</rate>
+			<rate>9.984222</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>SOMALIA</CtryNm>
@@ -1760,7 +1760,7 @@
 			<Ccy>SOS</Ccy>
 			<CcyNbr>706</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>685.947977</rate>
+			<rate>689.621288</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>SOUTH AFRICA</CtryNm>
@@ -1768,7 +1768,7 @@
 			<Ccy>ZAR</Ccy>
 			<CcyNbr>710</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>20.465139</rate>
+			<rate>20.655661</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS</CtryNm>
@@ -1787,7 +1787,7 @@
 			<Ccy>EUR</Ccy>
 			<CcyNbr>978</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.159693</rate>
+			<rate>1.16562</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>SRI LANKA</CtryNm>
@@ -1795,7 +1795,7 @@
 			<Ccy>LKR</Ccy>
 			<CcyNbr>144</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>436.643271</rate>
+			<rate>447.172656</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>SUDAN (THE)</CtryNm>
@@ -1803,7 +1803,7 @@
 			<Ccy>SDG</Ccy>
 			<CcyNbr>938</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>687.155288</rate>
+			<rate>690.843738</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>SURINAME</CtryNm>
@@ -1811,7 +1811,7 @@
 			<Ccy>SRD</Ccy>
 			<CcyNbr>968</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>37.268627</rate>
+			<rate>37.688028</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>SVALBARD AND JAN MAYEN</CtryNm>
@@ -1819,7 +1819,7 @@
 			<Ccy>NOK</Ccy>
 			<CcyNbr>578</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>11.990512</rate>
+			<rate>12.026665</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>SWEDEN</CtryNm>
@@ -1827,7 +1827,7 @@
 			<Ccy>SEK</Ccy>
 			<CcyNbr>752</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>12.6004</rate>
+			<rate>12.623859</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>SWITZERLAND</CtryNm>
@@ -1835,7 +1835,7 @@
 			<Ccy>CHF</Ccy>
 			<CcyNbr>756</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.137914</rate>
+			<rate>1.144446</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>SWITZERLAND</CtryNm>
@@ -1857,7 +1857,7 @@
 			<Ccy>SYP</Ccy>
 			<CcyNbr>760</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>3031.603218</rate>
+			<rate>3047.859007</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>TAIWAN (PROVINCE OF CHINA)</CtryNm>
@@ -1865,7 +1865,7 @@
 			<Ccy>TWD</Ccy>
 			<CcyNbr>901</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>37.336202</rate>
+			<rate>37.540405</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>TAJIKISTAN</CtryNm>
@@ -1873,7 +1873,7 @@
 			<Ccy>TJS</Ccy>
 			<CcyNbr>972</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>12.006366</rate>
+			<rate>12.195235</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>TANZANIA, UNITED REPUBLIC OF</CtryNm>
@@ -1881,7 +1881,7 @@
 			<Ccy>TZS</Ccy>
 			<CcyNbr>834</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>2816.187381</rate>
+			<rate>2828.86191</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>THAILAND</CtryNm>
@@ -1889,7 +1889,7 @@
 			<Ccy>THB</Ccy>
 			<CcyNbr>764</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>43.320172</rate>
+			<rate>43.330572</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>TIMOR-LESTE</CtryNm>
@@ -1897,7 +1897,7 @@
 			<Ccy>USD</Ccy>
 			<CcyNbr>840</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.206593</rate>
+			<rate>1.213062</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>TOGO</CtryNm>
@@ -1905,7 +1905,7 @@
 			<Ccy>XOF</Ccy>
 			<CcyNbr>952</CcyNbr>
 			<CcyMnrUnts>0</CcyMnrUnts>
-			<rate>759.344961</rate>
+			<rate>765.016691</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>TOKELAU</CtryNm>
@@ -1913,7 +1913,7 @@
 			<Ccy>NZD</Ccy>
 			<CcyNbr>554</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.9331</rate>
+			<rate>1.935429</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>TONGA</CtryNm>
@@ -1921,7 +1921,7 @@
 			<Ccy>TOP</Ccy>
 			<CcyNbr>776</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>2.848222</rate>
+			<rate>2.863495</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>TRINIDAD AND TOBAGO</CtryNm>
@@ -1929,7 +1929,7 @@
 			<Ccy>TTD</Ccy>
 			<CcyNbr>780</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>8.108776</rate>
+			<rate>8.239401</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>TUNISIA</CtryNm>
@@ -1937,7 +1937,7 @@
 			<Ccy>TND</Ccy>
 			<CcyNbr>788</CcyNbr>
 			<CcyMnrUnts>3</CcyMnrUnts>
-			<rate>3.912373</rate>
+			<rate>3.933356</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>TÜRKİYE</CtryNm>
@@ -1945,7 +1945,7 @@
 			<Ccy>TRY</Ccy>
 			<CcyNbr>949</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>22.47821</rate>
+			<rate>22.597891</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>TURKMENISTAN</CtryNm>
@@ -1953,7 +1953,7 @@
 			<Ccy>TMT</Ccy>
 			<CcyNbr>934</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>4.223074</rate>
+			<rate>4.245719</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>TURKS AND CAICOS ISLANDS (THE)</CtryNm>
@@ -1961,7 +1961,7 @@
 			<Ccy>USD</Ccy>
 			<CcyNbr>840</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.206593</rate>
+			<rate>1.213062</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>TUVALU</CtryNm>
@@ -1969,7 +1969,7 @@
 			<Ccy>AUD</Ccy>
 			<CcyNbr>036</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.790303</rate>
+			<rate>1.793185</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>UGANDA</CtryNm>
@@ -1977,7 +1977,7 @@
 			<Ccy>UGX</Ccy>
 			<CcyNbr>800</CcyNbr>
 			<CcyMnrUnts>0</CcyMnrUnts>
-			<rate>4468.063921</rate>
+			<rate>4535.893069</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>UKRAINE</CtryNm>
@@ -1985,7 +1985,7 @@
 			<Ccy>UAH</Ccy>
 			<CcyNbr>980</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>44.122392</rate>
+			<rate>44.816949</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>UNITED ARAB EMIRATES (THE)</CtryNm>
@@ -1993,7 +1993,7 @@
 			<Ccy>AED</Ccy>
 			<CcyNbr>784</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>4.431869</rate>
+			<rate>4.455703</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>UNITED KINGDOM OF GREAT BRITAIN AND NORTHERN IRELAND (THE)</CtryNm>
@@ -2009,7 +2009,7 @@
 			<Ccy>USD</Ccy>
 			<CcyNbr>840</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.206593</rate>
+			<rate>1.213062</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>UNITED STATES OF AMERICA (THE)</CtryNm>
@@ -2017,7 +2017,7 @@
 			<Ccy>USD</Ccy>
 			<CcyNbr>840</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.206593</rate>
+			<rate>1.213062</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>UNITED STATES OF AMERICA (THE)</CtryNm>
@@ -2032,7 +2032,7 @@
 			<Ccy>UYU</Ccy>
 			<CcyNbr>858</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>47.249397</rate>
+			<rate>47.683933</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>URUGUAY</CtryNm>
@@ -2054,7 +2054,7 @@
 			<Ccy>UZS</Ccy>
 			<CcyNbr>860</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>13407.236303</rate>
+			<rate>13627.613136</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>VANUATU</CtryNm>
@@ -2062,7 +2062,7 @@
 			<Ccy>VUV</Ccy>
 			<CcyNbr>548</CcyNbr>
 			<CcyMnrUnts>0</CcyMnrUnts>
-			<rate>144.816999</rate>
+			<rate>145.593523</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>VENEZUELA (BOLIVARIAN REPUBLIC OF)</CtryNm>
@@ -2084,7 +2084,7 @@
 			<Ccy>VND</Ccy>
 			<CcyNbr>704</CcyNbr>
 			<CcyMnrUnts>0</CcyMnrUnts>
-			<rate>29965.726625</rate>
+			<rate>30130.045324</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>VIRGIN ISLANDS (BRITISH)</CtryNm>
@@ -2092,7 +2092,7 @@
 			<Ccy>USD</Ccy>
 			<CcyNbr>840</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.206593</rate>
+			<rate>1.213062</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>VIRGIN ISLANDS (U.S.)</CtryNm>
@@ -2100,7 +2100,7 @@
 			<Ccy>USD</Ccy>
 			<CcyNbr>840</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>1.206593</rate>
+			<rate>1.213062</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>WALLIS AND FUTUNA</CtryNm>
@@ -2108,7 +2108,7 @@
 			<Ccy>XPF</Ccy>
 			<CcyNbr>953</CcyNbr>
 			<CcyMnrUnts>0</CcyMnrUnts>
-			<rate>139.512292</rate>
+			<rate>140.260395</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>WESTERN SAHARA</CtryNm>
@@ -2116,7 +2116,7 @@
 			<Ccy>MAD</Ccy>
 			<CcyNbr>504</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>12.823993</rate>
+			<rate>12.961959</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>YEMEN</CtryNm>
@@ -2124,7 +2124,7 @@
 			<Ccy>YER</Ccy>
 			<CcyNbr>886</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>301.868781</rate>
+			<rate>303.504944</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>ZAMBIA</CtryNm>
@@ -2132,7 +2132,7 @@
 			<Ccy>ZMW</Ccy>
 			<CcyNbr>967</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>20.070247</rate>
+			<rate>20.495869</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>ZIMBABWE</CtryNm>
@@ -2140,7 +2140,7 @@
 			<Ccy>ZWL</Ccy>
 			<CcyNbr>932</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
-			<rate>388.522317</rate>
+			<rate>390.605616</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>ZZ01_Bond Markets Unit European_EURCO</CtryNm>
@@ -2190,7 +2190,7 @@
 			<Ccy>XAU</Ccy>
 			<CcyNbr>959</CcyNbr>
 			<CcyMnrUnts>N.A.</CcyMnrUnts>
-			<rate>0.000688</rate>
+			<rate>0.000691</rate>
 		</CcyNtry>
 		<CcyNtry>
 			<CtryNm>ZZ09_Palladium</CtryNm>
@@ -2212,7 +2212,7 @@
 			<Ccy>XAG</Ccy>
 			<CcyNbr>961</CcyNbr>
 			<CcyMnrUnts>N.A.</CcyMnrUnts>
-			<rate>0.056102</rate>
+			<rate>0.056433</rate>
 		</CcyNtry>
 	</CcyTbl>
 </ISO_4217>
