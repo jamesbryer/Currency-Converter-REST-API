@@ -1,8 +1,6 @@
 <?php
 
 include "conf.php";
-//require "xml_builder.php";
-//require "download_iso_file.php";
 
 function check_rates_age($xml)
 {
@@ -22,7 +20,6 @@ function update_rates($xml, $rates)
         foreach ($rates as $code => $rate) {
             if ($code == $currency->code) {
                 $currency["rate"] = $rate;
-                echo $rate;
                 break;
             }
         }
@@ -170,7 +167,7 @@ function get_array_of_currencies()
     return $currencies;
 }
 
-if (!check_files_exist()) {
+/* if (!check_files_exist()) {
     $rates = call_api();
     build_xml($rates);
 } else {
@@ -181,4 +178,4 @@ if (!check_files_exist()) {
     } else {
         echo "Rates do not need updating!";
     }
-}
+} */

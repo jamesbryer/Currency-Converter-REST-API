@@ -1,6 +1,6 @@
 <?php
 //header('Content-Type: text/xml');
-require "get_array_of_currencies.php";
+require "functions.php";
 require "errors.php";
 
 $params = array("to", "from", "amnt", "format");
@@ -48,3 +48,16 @@ $amount = $_GET["amnt"];
 echo "FROM:  " . $from . " TO: " . $to . " AMOUNT: " . $amount;
 
 $converted_value = ($amount / $from * $to); // then round to 2dp
+
+if (!check_files_exist()) {
+    $rates = call_api();
+    build_xml($rates);
+} else {
+    $xml = simplexml_load_file("response.xml");
+    if (check_rates_age($xml) == true) {
+        $rates = call_api();
+        update_rates($xml, $rates);
+    } else {
+        echo "Rates do not need updating!";
+    }
+}
