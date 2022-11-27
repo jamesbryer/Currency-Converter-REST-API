@@ -14,6 +14,8 @@ $xml = simplexml_load_file("response.xml");
 if (!check_files_exist()) {
     $rates = call_api();
     build_xml($rates);
+    //reload string incase file doesn't exist!
+    $xml = simplexml_load_file("response.xml");
 } else {
     if (check_rates_age($xml) == true) {
         $rates = call_api();
@@ -22,8 +24,9 @@ if (!check_files_exist()) {
         echo "Rates do not need updating!";
     }
 }
-//reload string incase file needs updating/doesn't exist!
-$xml = simplexml_load_file("response.xml");
+
+
+
 
 foreach ($xml->currency as $currency) {
     if ($currency->code == $from) {
