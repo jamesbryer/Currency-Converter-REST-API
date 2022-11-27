@@ -10,7 +10,7 @@ $errors = array(
     "1500" => "Error in service"
 );
 
-function error_1000($error_code)
+function error_messaging($error_code)
 {
     global $errors;
     $error_message = $errors[$error_code];
