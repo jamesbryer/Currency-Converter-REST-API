@@ -7,7 +7,7 @@ $from = $_GET["from"];
 $to = $_GET["to"];
 $amount = $_GET["amnt"];
 
-$converted_value = ($amount / $from * $to); // TODO round to 2dp
+$converted_value = ($amount / $from_rate * $to_rate); // TODO round to 2dp
 
 $xml = simplexml_load_file("response.xml");
 
@@ -22,6 +22,8 @@ if (!check_files_exist()) {
         echo "Rates do not need updating!";
     }
 }
+//reload string incase file needs updating/doesn't exist!
+$xml = simplexml_load_file("response.xml");
 
 foreach ($xml->currency as $currency) {
     if ($currency->code == $from) {
@@ -33,3 +35,6 @@ foreach ($xml->currency as $currency) {
 }
 
 echo "From: " . $from . " Rate: " . $from_rate . " To: " . $to . " To rate: " . $to_rate;
+
+$converted_value = ($amount / $from_rate * $to_rate); // TODO round to 2dp
+echo " Converted rate: " . $converted_value;
