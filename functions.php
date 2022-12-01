@@ -28,7 +28,7 @@ function update_rates($xml, $rates)
     }
     $xml["timestamp"] = time();
     $xml->asXML("response.xml");
-    echo "Rates updated!";
+    //echo "Rates updated!";
 }
 
 //calls fixer api to obtain rates - returns decoded JSON string
@@ -67,7 +67,7 @@ function check_files_exist()
     if (!file_exists($rates_file)) {
         //Try to load the file, if the file does not exist, download it from the url 
         if (!file_exists($iso_file)) {
-            echo "File doesn't exist, downloading...";
+            //echo "File doesn't exist, downloading...";
             $url = 'https://www.six-group.com/dam/download/financial-information/data-center/iso-currrency/lists/list-one.xml';
             file_put_contents($iso_file, file_get_contents($url));
         }
@@ -163,7 +163,7 @@ function build_xml($rates)
     $handle = fopen($outputFilename, "w");
     fwrite($handle, $strxml);
     fclose($handle);
-    echo "Rates updated!";
+    //echo "Rates updated!";
 }
 
 //returns array of currency codes
@@ -192,13 +192,14 @@ function check_query_string($get)
 
     //check all required parameters are set
     if (!isset($get["from"]) and !isset($get["to"]) and !isset($get["amnt"])) {
-        return "1000";
+        return "error_1000";
     }
 
     //check all paramters are valid
     foreach ($get as $param => $value) {
         if (!in_array($param, $params)) {
-            return "1100";
+            return "error_1100";
+            //exit("error 1100");
         }
     }
     //get list of currencies
@@ -206,18 +207,31 @@ function check_query_string($get)
 
     //check currencies are valid
     if (!in_array($from, $currencies) and !in_array($to, $currencies)) {
-        return "1200";
+        return "error_1200";
     }
 
     //check that amount parameter is a decimal
-    if (!is_float($get["amnt"])) {
-        return "1300";
+    $fail = false;
+    try {
+        $amount = (float) $get["amnt"];
+        if (!is_float($amount)) {
+            $fail = true;
+        }
+    } catch (Exception $e) {
+        $fail = true;
     }
+    if ($fail == true) {
+        return "error_1300";
+    }
+
 
     //set correct output format and check whether it is valid
     if (isset($get["format"])) {
-        if ($get["format"] != "json" or $get["format"] != "xml") {
-            return "1400";
+        if ($get["format"] != "json") {
+            return "error_1400";
+        } else if ($get["format"] != "xml") {
+            return "error_1400";
         }
     }
+    return null;
 }

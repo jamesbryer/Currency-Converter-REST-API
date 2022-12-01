@@ -1,3 +1,10 @@
 1. implement base currency into config file and retrieve base currency to concatenate into api endpoint
 2. get a functioning index.php
 3. make it so if either xml file exists it will create them 
+
+
+$to_element = $sxe->addChild("to");
+$to_code_element = $to->addChild("code", $to_code);
+$to_currency_element = $to->addChild("curr", $to_currency_name);
+$to_loc_element = $to->addChild("loc", $to_currency_location);
+$to_amnt_element = $to->addChild("amnt", $converted_value);
