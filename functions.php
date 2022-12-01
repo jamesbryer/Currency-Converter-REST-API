@@ -224,12 +224,10 @@ function check_query_string($get)
         return "error_1300";
     }
 
-
+    $formats = array("xml", "json");
     //set correct output format and check whether it is valid
     if (isset($get["format"])) {
-        if ($get["format"] != "json") {
-            return "error_1400";
-        } else if ($get["format"] != "xml") {
+        if (!in_array($get["format"], $formats)) {
             return "error_1400";
         }
     }

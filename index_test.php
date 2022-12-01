@@ -56,7 +56,7 @@ if ($error_code != null) {
     $doc->formatOutput = true;
     $doc->loadXML($doc->load("errors.xml"));
     $xpath = new DOMXpath($doc);
-    $xpath_query = ".//errors//" . $error_code;
+    $xpath_query = ".//errors//" . $error_code . "/node()";
     $elements = $xpath->query($xpath_query);
     if ($elements) {
         foreach ($elements as $item) {
