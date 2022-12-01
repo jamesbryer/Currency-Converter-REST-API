@@ -67,8 +67,6 @@ if ($error_code != null) {
 }
 
 
-
-
 header('Content-Type: text/xml');
 $xmlstr = <<<XML
 <?xml version='1.0' standalone='yes'?>
