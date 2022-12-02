@@ -40,18 +40,18 @@ foreach ($xml->currency as $currency) {
     }
 }
 
+//retrieve timestamp and convert to a readable format
 $timestamp = intval($xml["timestamp"]);
 $timestamp = gmdate("F j, Y, g:i:s a", $timestamp);
+
 //do currency conversion - round to 2dp
-// $rate = number_format(($amount / $from_rate), 2);
-// $converted_value = number_format(($rate * $to_rate), 2);
 $rate = number_format($from_rate * $to_rate, 2);
 $converted_value = number_format($amount / $rate, 2);
 
-//echo " Converted rate: " . $converted_value;
-
+//check for errors in query string
 $error_code = check_query_string($_GET);
 
+//if there is an error within the query string, build and display error
 if ($error_code != null) {
     header('Content-Type: text/xml');
     $doc = new DOMDocument();
