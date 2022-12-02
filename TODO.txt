@@ -1,5 +1,5 @@
 1. implement base currency into config file and retrieve base currency to concatenate into api endpoint
-
+2. implement json for errors
 
 
 $to_element = $sxe->addChild("to");
