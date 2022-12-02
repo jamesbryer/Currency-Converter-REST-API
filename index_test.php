@@ -3,12 +3,12 @@
 require "functions.php";
 require "errors.php";
 
-$from = $_GET["from"];
-$to = $_GET["to"];
+$from = strtoupper($_GET["from"]);
+$to = strtoupper($_GET["to"]);
 $amount = $_GET["amnt"];
-
-$converted_value = ($amount / $from_rate * $to_rate); // TODO round to 2dp
-
+if (isset($_GET["format"])) {
+    $format = $_GET["format"];
+}
 $xml = simplexml_load_file("response.xml");
 
 //if the files doesn't exist - build it
@@ -43,8 +43,10 @@ foreach ($xml->currency as $currency) {
 $timestamp = intval($xml["timestamp"]);
 $timestamp = gmdate("F j, Y, g:i:s a", $timestamp);
 //do currency conversion - round to 2dp
-$rate = number_format(($amount / $from_rate), 2);
-$converted_value = number_format(($rate * $to_rate), 2);
+// $rate = number_format(($amount / $from_rate), 2);
+// $converted_value = number_format(($rate * $to_rate), 2);
+$rate = number_format($from_rate * $to_rate, 2);
+$converted_value = number_format($amount / $rate, 2);
 
 //echo " Converted rate: " . $converted_value;
 
@@ -67,7 +69,7 @@ if ($error_code != null) {
 }
 
 
-header('Content-Type: text/xml');
+
 $xmlstr = <<<XML
 <?xml version='1.0' standalone='yes'?>
 <conv></conv>
@@ -90,9 +92,17 @@ $to_currency_element = $to_element->addChild("curr", $to_currency_name);
 $to_loc_element = $to_element->addChild("loc", $to_currency_location);
 $to_amnt_element = $to_element->addChild("amnt", $converted_value);
 
-
-
-
+if ($format) {
+if ($format == "xml") {
+header('Content-Type: text/xml');
 echo ($sxe->asXML());
+} else if ($format == "json") {
+header('Content-Type: text/json');
+$json = new SimpleXMLElement($sxe->saveXML());
+$json_response = json_encode(array("conv" => $json), JSON_PRETTY_PRINT);
+echo $json_response;
+}
+}
 
-die();
+
+//die();

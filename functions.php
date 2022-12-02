@@ -186,8 +186,8 @@ function check_query_string($get)
 {
     $params = array("to", "from", "amnt", "format");
 
-    $from = $get["from"];
-    $to = $get["to"];
+    $from = strtoupper($get["from"]);
+    $to = strtoupper($get["to"]);
     $amount = $get["amnt"];
 
     //check all required parameters are set
@@ -206,7 +206,7 @@ function check_query_string($get)
     $currencies = get_array_of_currencies();
 
     //check currencies are valid
-    if (!in_array($from, $currencies) and !in_array($to, $currencies)) {
+    if (!in_array($from, $currencies) or !in_array($to, $currencies)) {
         return "error_1200";
     }
 
