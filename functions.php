@@ -186,19 +186,19 @@ function check_query_string($get)
 {
     $params = array("to", "from", "amnt", "format");
 
+    //check all required parameters are set
+    if (!isset($get["from"]) or !isset($get["to"]) or !isset($get["amnt"])) {
+        return "1000";
+    }
+
     $from = strtoupper($get["from"]);
     $to = strtoupper($get["to"]);
     $amount = $get["amnt"];
 
-    //check all required parameters are set
-    if (!isset($get["from"]) and !isset($get["to"]) and !isset($get["amnt"])) {
-        return "error_1000";
-    }
-
     //check all paramters are valid
     foreach ($get as $param => $value) {
         if (!in_array($param, $params)) {
-            return "error_1100";
+            return "1100";
             //exit("error 1100");
         }
     }
@@ -207,28 +207,20 @@ function check_query_string($get)
 
     //check currencies are valid
     if (!in_array($from, $currencies) or !in_array($to, $currencies)) {
-        return "error_1200";
+        return "1200";
     }
 
     //check that amount parameter is a decimal
-    $fail = false;
-    try {
-        $amount = (float) $get["amnt"];
-        if (!is_float($amount)) {
-            $fail = true;
-        }
-    } catch (Exception $e) {
-        $fail = true;
-    }
-    if ($fail == true) {
-        return "error_1300";
+    //$amount = (float) $get["amnt"];
+    if (!is_numeric($amount)) {
+        return "1300";
     }
 
     $formats = array("xml", "json");
     //set correct output format and check whether it is valid
     if (isset($get["format"])) {
         if (!in_array($get["format"], $formats)) {
-            return "error_1400";
+            return "1400";
         }
     }
     return null;
