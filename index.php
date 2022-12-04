@@ -5,7 +5,7 @@ require "errors.php";
 
 $from = strtoupper($_GET["from"]);
 $to = strtoupper($_GET["to"]);
-$amount = number_format($_GET["amnt"]);
+$amount = number_format($_GET["amnt"], 2);
 if (isset($_GET["format"])) {
     $format = $_GET["format"];
 } else {
@@ -48,7 +48,7 @@ $timestamp = gmdate("F j, Y, g:i:s a", $timestamp);
 
 //do currency conversion - round to 2dp
 $rate = $from_rate * $to_rate;
-$converted_value = number_format($amount / $rate, 2);
+$converted_value = number_format($amount / $from_rate * $to_rate, 2);
 
 //check for errors in query string
 $error_code = check_query_string($_GET);
@@ -122,18 +122,18 @@ $to_loc_element = $to_element->addChild("loc", $to_currency_location);
 $to_amnt_element = $to_element->addChild("amnt", $converted_value);
 
 if (isset($format)) {
-    if ($format == "json") {
-        header('Content-Type: text/json');
-        $json = new SimpleXMLElement($sxe->saveXML());
-        $json_response = json_encode(array("conv" => $json), JSON_PRETTY_PRINT);
-        echo $json_response;
-    } else if ($format == "xml") {
-        header('Content-Type: text/xml');
-        echo ($sxe->asXML());
-    }
+if ($format == "json") {
+header('Content-Type: text/json');
+$json = new SimpleXMLElement($sxe->saveXML());
+$json_response = json_encode(array("conv" => $json), JSON_PRETTY_PRINT);
+echo $json_response;
+} else if ($format == "xml") {
+header('Content-Type: text/xml');
+echo ($sxe->asXML());
+}
 } else {
-    header('Content-Type: text/xml');
-    echo ($sxe->asXML());
+header('Content-Type: text/xml');
+echo ($sxe->asXML());
 }
 
 
