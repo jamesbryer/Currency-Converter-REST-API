@@ -11,7 +11,7 @@ if (isset($_GET["format"])) {
 } else {
     $format = null;
 }
-$xml = simplexml_load_file("response.xml");
+
 
 //if the files doesn't exist - build it
 if (!check_files_exist()) {
@@ -21,6 +21,7 @@ if (!check_files_exist()) {
     $xml = simplexml_load_file("response.xml");
 } else {
     //check age of rates and update if neccessary
+    $xml = simplexml_load_file("response.xml");
     if (check_rates_age($xml) == true) {
         $rates = call_api();
         update_rates($xml, $rates);
@@ -48,7 +49,7 @@ $timestamp = gmdate("F j, Y, g:i:s a", $timestamp);
 
 //do currency conversion - round to 2dp
 $rate = $from_rate * $to_rate;
-$converted_value = number_format($amount / $from_rate * $to_rate, 2);
+$converted_value = ($amount / $from_rate) * $to_rate;
 
 //check for errors in query string
 $error_code = check_query_string($_GET);
@@ -74,8 +75,6 @@ if ($error_code != null) {
             $msg_element = $error_element->appendChild($msg_element);
             $msg_value = $doc->createTextNode($error_message);
             $msg_value = $msg_element->appendChild($msg_value);
-
-            //echo "Success theres a match!";
             break;
         }
     }
