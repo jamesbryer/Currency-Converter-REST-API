@@ -68,9 +68,7 @@ function check_files_exist()
     if (!file_exists($rates_file)) {
         //Try to load the file, if the file does not exist, download it from the url 
         if (!file_exists($iso_file)) {
-            //echo "File doesn't exist, downloading...";
-            $url = 'https://www.six-group.com/dam/download/financial-information/data-center/iso-currrency/lists/list-one.xml';
-            file_put_contents($iso_file, file_get_contents($url));
+            file_put_contents($iso_file, file_get_contents(ISO_FILE_URL));
         }
         return false;
     } else {
@@ -130,22 +128,19 @@ function build_xml($rates)
         }
 
         //create element for currency code and set its value to the current code from api data
-        $code_element = $doc->createElement("code");
+        $code_element = $doc->createElement("code", $api_code);
         $code_element = $container->appendChild($code_element);
-        $code_value = $doc->createTextNode($api_code);
-        $code_value = $code_element->appendChild($code_value);
+
 
         //create element to hold countries that use the currency and set its value from the for loop string
-        $country_element = $doc->createElement("loc");
+        $country_element = $doc->createElement("loc", $countries_string);
         $country_element = $container->appendChild($country_element);
-        $country_value = $doc->createTextNode($countries_string);
-        $country_value = $country_element->appendChild($country_value);
+
 
         //create element for currency name and set using value from second foreach loop
-        $currency_element = $doc->createElement("curr");
+        $currency_element = $doc->createElement("curr", $curr);
         $currency_element = $container->appendChild($currency_element);
-        $currency_value = $doc->createTextNode($curr);
-        $currency_value = $currency_element->appendChild($currency_value);
+
 
         //create attribute for rate and set value from api data
         $rate_attribute = $doc->createAttribute("rate");
@@ -200,7 +195,6 @@ function check_query_string($get)
     foreach ($get as $param => $value) {
         if (!in_array($param, $params)) {
             return "1100";
-            //exit("error 1100");
         }
     }
     //get list of currencies
@@ -212,7 +206,6 @@ function check_query_string($get)
     }
 
     //check that amount parameter is a decimal
-    //$amount = (float) $get["amnt"];
     if (!is_numeric($amount)) {
         return "1300";
     }
@@ -225,4 +218,17 @@ function check_query_string($get)
         }
     }
     return null;
+}
+
+function output_response($format, $doc)
+{
+    if ($format == "json") {
+        header('Content-Type: text/json');
+        $json = new SimpleXMLElement($doc->saveXML());
+        $json_response = json_encode(array("conv" => $json), JSON_PRETTY_PRINT);
+        echo $json_response;
+    } else if ($format = "xml") {
+        header('Content-Type: text/xml');
+        echo $doc->saveXML();
+    }
 }

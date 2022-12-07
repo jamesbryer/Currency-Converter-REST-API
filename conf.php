@@ -3,6 +3,7 @@
 define("CURRENCY_API_KEY", "Ra3niNeqTj1IWKnYIDkUTdaETgU2nV1x");
 define("BASE_CURRENCY", "GBP");
 define("API_ENDPOINT", "https://api.apilayer.com/fixer/latest?base=");
+define("ISO_FILE_URL", "https://www.six-group.com/dam/download/financial-information/data-center/iso-currrency/lists/list-one.xml");
 
 const ERROR_CODES_AND_MESSAGES = array(
     "1000" => "Required parameter is missing",
