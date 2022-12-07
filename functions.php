@@ -141,7 +141,6 @@ function build_xml($rates)
         $currency_element = $doc->createElement("curr", $curr);
         $currency_element = $container->appendChild($currency_element);
 
-
         //create attribute for rate and set value from api data
         $rate_attribute = $doc->createAttribute("rate");
         $rate_attribute->value = $rate;
