@@ -121,18 +121,18 @@ $to_loc_element = $to_element->addChild("loc", $to_currency_location);
 $to_amnt_element = $to_element->addChild("amnt", $converted_value);
 
 if (isset($format)) {
-if ($format == "json") {
-header('Content-Type: text/json');
-$json = new SimpleXMLElement($sxe->saveXML());
-$json_response = json_encode(array("conv" => $json), JSON_PRETTY_PRINT);
-echo $json_response;
-} else if ($format == "xml") {
-header('Content-Type: text/xml');
-echo ($sxe->asXML());
-}
+    if ($format == "json") {
+        header('Content-Type: text/json');
+        $json = new SimpleXMLElement($sxe->saveXML());
+        $json_response = json_encode(array("conv" => $json), JSON_PRETTY_PRINT);
+        echo $json_response;
+    } else if ($format == "xml") {
+        header('Content-Type: text/xml');
+        echo ($sxe->asXML());
+    }
 } else {
-header('Content-Type: text/xml');
-echo ($sxe->asXML());
+    header('Content-Type: text/xml');
+    echo ($sxe->asXML());
 }
 
 

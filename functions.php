@@ -32,15 +32,16 @@ function update_rates($xml, $rates)
 }
 
 //calls fixer api to obtain rates - returns decoded JSON string
+//endpoint, base currency and api key all set in conf.php
 function call_api()
 {
     //uses curl to make API call
     $curl = curl_init();
     curl_setopt_array($curl, array(
-        CURLOPT_URL => "https://api.apilayer.com/fixer/latest?base=GBP",
+        CURLOPT_URL => API_ENDPOINT . BASE_CURRENCY,
         CURLOPT_HTTPHEADER => array(
             "Content-Type: text/plain",
-            "apikey: Ra3niNeqTj1IWKnYIDkUTdaETgU2nV1x"
+            "apikey: " . CURRENCY_API_KEY
         ),
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_ENCODING => "",
