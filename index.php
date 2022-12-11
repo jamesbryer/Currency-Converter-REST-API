@@ -22,7 +22,7 @@ if (!check_files_exist()) {
     $xml = simplexml_load_file("response.xml");
     if (check_rates_age($xml) == true) {
         $rates = call_api();
-        update_rates($xml, $rates);
+        update_rates($xml, $rates, OUTPUT_FILENAME_ROOT);
     }
 }
 

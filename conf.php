@@ -16,7 +16,8 @@ define("FORMATS", array("xml", "json"));
 define("LIVE_CURRENCIES", array("AUD", "BRL", "CAD", "CHF", "CNY", "DKK", "EUR", "GBP", "HKD", "HUF", "INR", "JPY", "MXN", "MYR", "NOK", "NZD", "PHP", "RUB", "SEK", "SGD", "THB", "TRY", "USD", "ZAR"));
 //names of files as well response and iso as consts 
 
-
+define("OUTPUT_FILENAME_UPDATE", "../response.xml");
+define("OUTPUT_FILENAME_ROOT", "response.xml");
 const ERROR_CODES_AND_MESSAGES = array(
     "1000" => "Required parameter is missing",
     "1100" => "Parameter not recognised",

@@ -15,7 +15,7 @@ function check_rates_age($xml)
 }
 
 //updates rates using fresh api data
-function update_rates($xml, $rates)
+function update_rates($xml, $rates, $output_filename)
 {
     //loops through each currency in xml file and finds corresponding currency in API data
     foreach ($xml->currency as $currency) {
@@ -27,7 +27,7 @@ function update_rates($xml, $rates)
         }
     }
     $xml["timestamp"] = time();
-    $xml->asXML("response.xml");
+    $xml->asXML($output_filename);
     //echo "Rates updated!";
 }
 
