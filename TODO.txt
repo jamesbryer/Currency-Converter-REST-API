@@ -1,8 +1,0 @@
-
-
-
-$to_element = $sxe->addChild("to");
-$to_code_element = $to->addChild("code", $to_code);
-$to_currency_element = $to->addChild("curr", $to_currency_name);
-$to_loc_element = $to->addChild("loc", $to_currency_location);
-$to_amnt_element = $to->addChild("amnt", $converted_value);

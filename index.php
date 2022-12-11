@@ -1,16 +1,13 @@
 <?php
 
 require "functions.php";
-require "errors.php";
 
 $from = strtoupper($_GET["from"]);
 $to = strtoupper($_GET["to"]);
-$amount = number_format($_GET["amnt"], 2);
+$amount = $_GET["amnt"];
 
-if (isset($_GET["format"])) {
-    $format = $_GET["format"];
-} else {
-    $format = "xml";
+if (!isset($_GET["format"])) {
+    $_GET["format"] = "xml";
 }
 
 
@@ -44,45 +41,26 @@ foreach ($xml->currency as $currency) {
     }
 }
 
-//retrieve timestamp and convert to a readable format
-$timestamp = intval($xml["timestamp"]);
-$timestamp = gmdate("F j, Y, g:i:s a", $timestamp);
-
-//do currency conversion - round to 2dp
-$rate = $from_rate * $to_rate;
-$converted_value = ($amount / $from_rate) * $to_rate;
-
 //check for errors in query string
 $error_code = check_query_string($_GET);
 
 //if there is an error within the query string, build and display error
 if ($error_code != null) {
-
-    $doc = new DOMDocument();
-    $doc->formatOutput = true;
-    $root = $doc->createElement("conv");
-    $root = $doc->appendChild($root);
-    $error_element = $doc->createElement("error");
-    $error_element = $root->appendChild($error_element);
-
-    foreach (ERROR_CODES_AND_MESSAGES as $code => $message) {
-        if ($code == $error_code) {
-            $code_element = $doc->createElement("code", $code);
-            $code_element = $error_element->appendChild($code_element);
-
-            $msg_element = $doc->createElement("msg", $message);
-            $msg_element = $error_element->appendChild($msg_element);
-            break;
-        }
-    }
-
+    //a bit of housekeeping - if there's an error in the format type, set back to defualt of xml
     if ($error_code == "1400") {
-        $format = "xml";
+        $_GET["format"] = "xml";
     }
-
-    output_response($format, $doc);
-    exit();
+    //output response of create_error function in format described by query string
+    output_response($_GET["format"], create_error($error_code));
+    exit(); //exit to stop script running
 }
+
+//do currency conversion - round to 2dp
+$rate = $from_rate * $to_rate;
+$converted_value = round(($amount / $from_rate) * $to_rate, 2);
+
+//retrieve timestamp and convert to a readable format
+$timestamp = gmdate("F j, Y, g:i:s a", intval($xml["timestamp"]));
 
 
 
@@ -108,4 +86,4 @@ $to_currency_element = $to_element->addChild("curr", $to_currency_name);
 $to_loc_element = $to_element->addChild("loc", $to_currency_location);
 $to_amnt_element = $to_element->addChild("amnt", $converted_value);
 
-output_response($format, $sxe);
+output_response($_GET["format"], $sxe);

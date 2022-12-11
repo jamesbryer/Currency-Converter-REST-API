@@ -112,11 +112,13 @@ function build_xml($rates)
         $container = $doc->createElement("currency");
         foreach ($xml->CcyTbl->CcyNtry as $country) {
             $code = $country->Ccy;
-            $country_name = $country->CtryNm;
             if ($api_code == $code) {
+                $country_name = $country->CtryNm;
                 array_push($countries_array, $country_name);
                 $curr = $country->CcyNm;
             }
+        }
+        if ($countries_array != null) {
             //implode the array with a comma as a separator 
             $countries_string = implode(", ", $countries_array);
             //set all words to lowercase
@@ -125,33 +127,39 @@ function build_xml($rates)
             $countries_string = ucwords($countries_string);
             //set every word after an "(" to uppercase
             $countries_string = ucwords($countries_string, "(");
+
+            if (in_array($api_code, LIVE_CURRENCIES)) {
+                $status = "1";
+            } else {
+                $status = "0";
+            }
+
+            //create element for currency code and set its value to the current code from api data
+            $code_element = $doc->createElement("code", $api_code);
+            $code_element = $container->appendChild($code_element);
+
+
+            //create element to hold countries that use the currency and set its value from the for loop string
+            $country_element = $doc->createElement("loc", $countries_string);
+            $country_element = $container->appendChild($country_element);
+
+
+            //create element for currency name and set using value from second foreach loop
+            $currency_element = $doc->createElement("curr", $curr);
+            $currency_element = $container->appendChild($currency_element);
+
+            //create attribute for rate and set value from api data
+            $rate_attribute = $container->setAttribute("rate", $rate);
+            //$rate_attribute->value = $rate;
+            $rate_attribute = $container->appendChild($rate_attribute);
+
+            //create attribute for whether the currency is live or not
+            $live_attribute = $doc->createAttribute("live");
+            $live_attribute->value = $status;
+            $live_attribute = $container->appendChild($live_attribute);
+
+            $root->appendChild($container);
         }
-
-        //create element for currency code and set its value to the current code from api data
-        $code_element = $doc->createElement("code", $api_code);
-        $code_element = $container->appendChild($code_element);
-
-
-        //create element to hold countries that use the currency and set its value from the for loop string
-        $country_element = $doc->createElement("loc", $countries_string);
-        $country_element = $container->appendChild($country_element);
-
-
-        //create element for currency name and set using value from second foreach loop
-        $currency_element = $doc->createElement("curr", $curr);
-        $currency_element = $container->appendChild($currency_element);
-
-        //create attribute for rate and set value from api data
-        $rate_attribute = $doc->createAttribute("rate");
-        $rate_attribute->value = $rate;
-        $rate_attribute = $container->appendChild($rate_attribute);
-
-        //create attribute for whether the 
-        $live_attribute = $doc->createAttribute("live");
-        $live_attribute->value = "1";
-        $live_attribute = $container->appendChild($live_attribute);
-
-        $root->appendChild($container);
     }
 
     $strxml = $doc->saveXML();
@@ -179,7 +187,7 @@ function get_array_of_currencies()
 
 function check_query_string($get)
 {
-    $params = array("to", "from", "amnt", "format");
+    //$params = array("to", "from", "amnt", "format");
 
     //check all required parameters are set
     if (!isset($get["from"]) or !isset($get["to"]) or !isset($get["amnt"])) {
@@ -192,7 +200,7 @@ function check_query_string($get)
 
     //check all paramters are valid
     foreach ($get as $param => $value) {
-        if (!in_array($param, $params)) {
+        if (!in_array($param, PARAMS)) {
             return "1100";
         }
     }
@@ -209,14 +217,33 @@ function check_query_string($get)
         return "1300";
     }
 
-    $formats = array("xml", "json");
     //set correct output format and check whether it is valid
     if (isset($get["format"])) {
-        if (!in_array($get["format"], $formats)) {
+        if (!in_array($get["format"], FORMATS)) {
             return "1400";
         }
     }
     return null;
+}
+
+function create_error($error_code)
+{
+    $doc = new DOMDocument();
+    $doc->formatOutput = true;
+    $root = $doc->createElement("conv");
+    $root = $doc->appendChild($root);
+    $error_element = $doc->createElement("error");
+    $error_element = $root->appendChild($error_element);
+    //create error code element
+    $code_element = $doc->createElement("code", $error_code);
+    $code_element = $error_element->appendChild($code_element);
+    //create error message element
+    $msg_element = $doc->createElement("msg", ERROR_CODES_AND_MESSAGES[$error_code]);
+    $msg_element = $error_element->appendChild($msg_element);
+    //set format to xml (default) if there's a format error
+
+    //pass document and format to response function to display
+    return $doc;
 }
 
 function output_response($format, $doc)
