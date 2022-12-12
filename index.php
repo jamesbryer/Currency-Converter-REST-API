@@ -1,15 +1,13 @@
 <?php
-
+include "conf.php";
 require "functions.php";
 
-$from = strtoupper($_GET["from"]);
-$to = strtoupper($_GET["to"]);
+
 $amount = $_GET["amnt"];
 
 if (!isset($_GET["format"])) {
     $_GET["format"] = "xml";
 }
-
 
 //if the files doesn't exist - build it
 if (!check_files_exist()) {
@@ -22,18 +20,25 @@ if (!check_files_exist()) {
     $xml = simplexml_load_file("response.xml");
     if (check_rates_age($xml) == true) {
         $rates = call_api();
-        update_rates($xml, $rates, OUTPUT_FILENAME_ROOT);
+        update_rates($xml, $rates);
     }
 }
 
+
 //setting rates from query string codes
 foreach ($xml->currency as $currency) {
-    if ($currency->code == $from) {
+
+    //create break condition
+    if ($from_rate != null and $to_rate != null) {
+        break;
+    }
+
+    if ($currency->code == strtoupper($_GET["from"])) {
         $from_rate = $currency["rate"];
         $from_code = $currency->code;
         $from_currency_name = $currency->curr;
         $from_currency_location = $currency->loc;
-    } else if ($currency->code == $to) {
+    } else if ($currency->code == strtoupper($_GET["to"])) {
         $to_rate = $currency["rate"];
         $to_code = $currency->code;
         $to_currency_name = $currency->curr;
@@ -62,6 +67,7 @@ $converted_value = round(($amount / $from_rate) * $to_rate, 2);
 //retrieve timestamp and convert to a readable format
 $timestamp = gmdate("F j, Y, g:i:s a", intval($xml["timestamp"]));
 
+//$doc = new DOMDocument("1.0", "UTF-8");
 
 
 $xmlstr = <<<XML

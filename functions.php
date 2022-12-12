@@ -1,13 +1,12 @@
 <?php
 
-include "conf.php";
 
 //checks timestamp of rates, if over 12 hours old returns true
 function check_rates_age($xml)
 {
     //gets current Unix timestamp and timestamp from XML document - if document is older than 12 hours, calls update rates function
     $current_time = time();
-    if (($current_time - $xml['timestamp']) > 43200) {
+    if (($current_time - $xml['timestamp']) > UPDATE_INTERVAL) {
         return true;
     } else {
         return false;
@@ -15,7 +14,7 @@ function check_rates_age($xml)
 }
 
 //updates rates using fresh api data
-function update_rates($xml, $rates, $output_filename)
+function update_rates($xml, $rates)
 {
     //loops through each currency in xml file and finds corresponding currency in API data
     foreach ($xml->currency as $currency) {
@@ -27,7 +26,7 @@ function update_rates($xml, $rates, $output_filename)
         }
     }
     $xml["timestamp"] = time();
-    $xml->asXML($output_filename);
+    $xml->asXML(OUTPUT_FILENAME_ROOT);
     //echo "Rates updated!";
 }
 
@@ -82,13 +81,11 @@ function build_xml($rates)
     //A script to check whether the output XML files exists and create it if it does not using the ISO file
     //UPDATE IN FINAL TO IF FILE DOESNT EXIST !!!! ONLY RUNNING LIKE THIS FOR TESTING
 
-    $filename = "iso_4217.xml";
-    $xml = simplexml_load_file($filename);
+    $xml = simplexml_load_file(ISO_FILENAME);
 
     // Create a new dom document with pretty formatting
     $doc = new DomDocument();
     $doc->formatOutput = true;
-    $outputFilename = "response.xml";
 
     // Add a root node to the document called rates
     $root = $doc->createElement('rates');
@@ -163,7 +160,7 @@ function build_xml($rates)
     }
 
     $strxml = $doc->saveXML();
-    $handle = fopen($outputFilename, "w");
+    $handle = fopen(OUTPUT_FILENAME_ROOT, "w");
     fwrite($handle, $strxml);
     fclose($handle);
     //echo "Rates updated!";
@@ -204,11 +201,9 @@ function check_query_string($get)
             return "1100";
         }
     }
-    //get list of currencies
-    $currencies = get_array_of_currencies();
 
     //check currencies are valid
-    if (!in_array($from, $currencies) or !in_array($to, $currencies)) {
+    if (!in_array($from, LIVE_CURRENCIES) or !in_array($to, LIVE_CURRENCIES)) {
         return "1200";
     }
 
@@ -228,7 +223,7 @@ function check_query_string($get)
 
 function create_error($error_code)
 {
-    $doc = new DOMDocument();
+    $doc = new DOMDocument("1.0", "UTF-8");
     $doc->formatOutput = true;
     $root = $doc->createElement("conv");
     $root = $doc->appendChild($root);

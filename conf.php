@@ -13,16 +13,27 @@ define("PARAMS", array("from", "to", "amnt", "format"));
 //formats xml or json
 define("FORMATS", array("xml", "json"));
 //define live with array of codes of live currencies
-define("LIVE_CURRENCIES", array("AUD", "BRL", "CAD", "CHF", "CNY", "DKK", "EUR", "GBP", "HKD", "HUF", "INR", "JPY", "MXN", "MYR", "NOK", "NZD", "PHP", "RUB", "SEK", "SGD", "THB", "TRY", "USD", "ZAR"));
-//names of files as well response and iso as consts 
+define("LIVE_CURRENCIES", array(
+    "AUD", "BRL", "CAD", "CHF",
+    "CNY", "DKK", "EUR", "GBP",
+    "HKD", "HUF", "INR", "JPY",
+    "MXN", "MYR", "NOK", "NZD",
+    "PHP", "RUB", "SEK", "SGD",
+    "THB", "TRY", "USD", "ZAR"
+));
 
+//names of files as well response and iso as consts 
 define("OUTPUT_FILENAME_UPDATE", "../response.xml");
+
 define("OUTPUT_FILENAME_ROOT", "response.xml");
-const ERROR_CODES_AND_MESSAGES = array(
+
+define("ISO_FILENAME", "iso_4217.xml");
+
+define("ERROR_CODES_AND_MESSAGES", array(
     "1000" => "Required parameter is missing",
     "1100" => "Parameter not recognised",
     "1200" => "Currency type not recognised",
     "1300" => "Currency type must be a decimal number",
     "1400" => "Format must be xml or json",
     "1500" => "Error in service"
-);
+));

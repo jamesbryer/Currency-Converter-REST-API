@@ -30,8 +30,8 @@ $xml = simplexml_load_file("../response.xml") or die("Cannot load file");
 
 if (check_rates_age($xml) == true) {
     $rates = call_api();
-    update_rates($xml, $rates, OUTPUT_FILENAME_UPDATE);
-    $xml = simplexml_load_file("../response.xml") or die("Cannot load file");
+    update_rates($xml, $rates);
+    $xml = simplexml_load_file(OUTPUT_FILENAME_UPDATE) or die("Cannot load file");
     foreach ($xml->currency as $currency) {
         if ($currency->code == $_GET["curr"]) {
             $new_rate = $currency["rate"];
@@ -46,5 +46,3 @@ if (check_rates_age($xml) == true) {
 $xml = simplexml_load_file("../response.xml") or die("Cannot load file");
 
 echo "Old rate = " . $old_rate . " and New rate = " . $new_rate;
-//echo $response;
-//echo $_GET["curr"];
