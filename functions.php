@@ -14,7 +14,7 @@ function check_rates_age($xml)
 }
 
 //updates rates using fresh api data
-function update_rates($xml, $rates)
+function update_rates($xml, $rates, $output = OUTPUT_FILENAME_ROOT)
 {
     //loops through each currency in xml file and finds corresponding currency in API data
     foreach ($xml->currency as $currency) {
@@ -26,7 +26,7 @@ function update_rates($xml, $rates)
         }
     }
     $xml["timestamp"] = time();
-    $xml->asXML(OUTPUT_FILENAME_ROOT);
+    $xml->asXML($output);
     //echo "Rates updated!";
 }
 
@@ -147,7 +147,6 @@ function build_xml($rates)
 
             //create attribute for rate and set value from api data
             $rate_attribute = $container->setAttribute("rate", $rate);
-            //$rate_attribute->value = $rate;
             $rate_attribute = $container->appendChild($rate_attribute);
 
             //create attribute for whether the currency is live or not
@@ -166,10 +165,10 @@ function build_xml($rates)
     //echo "Rates updated!";
 }
 
-//returns array of currency codes
-function get_array_of_currencies()
+//returns array of ALL currency codes
+function get_array_of_currencies($filename)
 {
-    $filename = "response.xml";
+    //$filename = "response.xml";
     $xml = simplexml_load_file($filename);
     $currencies = array();
 
@@ -182,6 +181,7 @@ function get_array_of_currencies()
     return $currencies;
 }
 
+//checks query string for API for validation
 function check_query_string($get)
 {
     //$params = array("to", "from", "amnt", "format");
@@ -221,6 +221,7 @@ function check_query_string($get)
     return null;
 }
 
+//returns domdoc of error in correct format with code and message
 function create_error($error_code)
 {
     $doc = new DOMDocument("1.0", "UTF-8");
@@ -241,6 +242,7 @@ function create_error($error_code)
     return $doc;
 }
 
+//prints either json or xml according to input 
 function output_response($format, $doc)
 {
     if ($format == "json") {

@@ -2,47 +2,97 @@
 include "../functions.php";
 include "../conf.php";
 
-//function takes a currency code as a parameter and returns its current rate according to response.xml
-function get_currency_rate($currency_code)
+
+function put_method($currency_code)
 {
-    if (in_array($currency_code, LIVE_CURRENCIES)) {
-        //use foreach loop to retrieve old rate of currency
-        $xml = simplexml_load_file("../response.xml") or die("Cannot load file");
+    $xml = simplexml_load_file(OUTPUT_FILENAME_UPDATE) or die("Cannot load file");
+
+    foreach ($xml->currency as $currency) {
+        if ($currency->code == strtoupper($currency_code)) {
+            $old_rates_info = array(
+                "rate" => $currency["rate"],
+                "code" => $currency->code,
+                "curr" => $currency->curr,
+                "loc" => $currency->loc
+            );
+        }
+    }
+
+    $put_response = new DOMDocument("1.0", "UTF-8");
+    $put_response->formatOutput = true;
+
+    $root = $put_response->createElement("action");
+    $root = $put_response->appendChild($root);
+
+    $root_attribute = $root->setAttribute("type", "put");
+    $root_attribute = $root->appendChild($root_attribute);
+
+    $at_element = $put_response->createElement("at", gmdate("F j, Y, g:i:s a", intval($xml["timestamp"])));
+    $at_element = $root->appendChild($at_element);
+
+    $old_rate_element = $put_response->createElement("old_rate", $old_rates_info["rate"]);
+    $old_rate_element = $root->appendChild($old_rate_element);
+
+    //get updated rate if required, otherwise use old rate as new rate!
+    if (check_rates_age($xml) == true) {
+        $rates = call_api();
+        update_rates($xml, $rates, OUTPUT_FILENAME_UPDATE);
+        $xml = simplexml_load_file(OUTPUT_FILENAME_UPDATE) or die("Cannot load file");
         foreach ($xml->currency as $currency) {
-            if ($currency->code == $currency_code) {
-                $old_rate = $currency["rate"];
-                break;
-            } else {
-                $old_rate = "Error: could not find rate!";
+            if ($currency->code == strtoupper($currency_code)) {
+                $new_rates_rate = $currency["rate"];
             }
         }
-        return $old_rate;
+    } else {
+        $new_rates_rate = $old_rates_info["rate"];
     }
+
+    $rate_element = $put_response->createElement("rate", $new_rates_rate);
+    $rate_element = $root->appendChild($rate_element);
+
+    $curr_element = $put_response->createElement("curr");
+    $curr_element = $root->appendChild($curr_element);
+
+    $code_element = $put_response->createElement("code", $old_rates_info["code"]);
+    $code_element = $curr_element->appendChild($code_element);
+
+    $name_element = $put_response->createElement("name", $old_rates_info["curr"]);
+    $name_element = $curr_element->appendChild($name_element);
+
+    $loc_element = $put_response->createElement("loc", $old_rates_info["loc"]);
+    $loc_element = $curr_element->appendChild($loc_element);
+
+    output_response("xml", $put_response);
 }
 
+function post_delete_method($currency_code, $action)
+{
+    $currencies_array = get_array_of_currencies(OUTPUT_FILENAME_UPDATE);
 
-
-
-
-$old_rate = get_currency_rate($_GET["curr"]);
-
-$xml = simplexml_load_file("../response.xml") or die("Cannot load file");
-
-if (check_rates_age($xml) == true) {
-    $rates = call_api();
-    update_rates($xml, $rates);
-    $xml = simplexml_load_file(OUTPUT_FILENAME_UPDATE) or die("Cannot load file");
-    foreach ($xml->currency as $currency) {
-        if ($currency->code == $_GET["curr"]) {
-            $new_rate = $currency["rate"];
-            break;
+    if (in_array($currency_code, $currencies_array)) {
+        $xml = simplexml_load_file(OUTPUT_FILENAME_UPDATE);
+        foreach ($xml->currency as $currency) {
+            if ($currency_code == $currency->code) {
+                if ($action == "post") {
+                    $currency["live"] = "1";
+                    echo "done posting!";
+                } elseif ($action == "delete") {
+                    $currency["live"] = "0";
+                    echo "done deleting!";
+                }
+                $xml->asXML(OUTPUT_FILENAME_UPDATE);
+                break;
+            }
         }
+    } else {
+        echo "bitch u got an error!";
     }
-} else {
-    $new_rate = $old_rate;
 }
 
+if ($_GET["action"] == "put") {
+    put_method($_GET["cur"]);
+}
 
-$xml = simplexml_load_file("../response.xml") or die("Cannot load file");
-
-echo "Old rate = " . $old_rate . " and New rate = " . $new_rate;
+if ($_GET["action"] == "post" or $_GET["action"] == "delete") {
+    post_delete_method($_GET["cur"], $_GET["action"]);
+}
