@@ -166,7 +166,7 @@ function build_xml($rates)
 }
 
 //returns array of ALL currency codes
-function get_array_of_currencies($filename)
+function get_array_of_currencies($filename = OUTPUT_FILENAME_ROOT)
 {
     //$filename = "response.xml";
     $xml = simplexml_load_file($filename);

@@ -62,7 +62,7 @@ function put_method($currency_code)
     $loc_element = $put_response->createElement("loc", $old_rates_info["loc"]);
     $loc_element = $curr_element->appendChild($loc_element);
 
-    output_response("xml", $put_response);
+    return $put_response;
 }
 
 function post_delete_method($currency_code, $action)
@@ -90,7 +90,7 @@ function post_delete_method($currency_code, $action)
 }
 
 if ($_GET["action"] == "put") {
-    put_method($_GET["cur"]);
+    output_response($_GET["format"], put_method($_GET["cur"]));
 }
 
 if ($_GET["action"] == "post" or $_GET["action"] == "delete") {
