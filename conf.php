@@ -10,6 +10,8 @@ define("ISO_FILE_URL", "https://www.six-group.com/dam/download/financial-informa
 define("UPDATE_INTERVAL", 43200);
 //params for from to amnt format
 define("PARAMS", array("from", "to", "amnt", "format"));
+//define CRUD params for part b 
+define("CRUD_PARAMS", array("cur", "action"));
 //formats xml or json
 define("FORMATS", array("xml", "json"));
 //define live with array of codes of live currencies
