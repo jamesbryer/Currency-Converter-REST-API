@@ -168,7 +168,7 @@ function build_xml($rates)
 //returns array of ALL currency codes
 function get_array_of_currencies($filename = OUTPUT_FILENAME_ROOT)
 {
-    //$filename = "response.xml";
+
     $xml = simplexml_load_file($filename);
     $currencies = array();
 
@@ -176,6 +176,23 @@ function get_array_of_currencies($filename = OUTPUT_FILENAME_ROOT)
     foreach ($xml->currency as $currency) {
         $code = $currency->code;
         array_push($currencies, $code);
+    }
+
+    return $currencies;
+}
+
+function get_array_of_live_currencies($filename = OUTPUT_FILENAME_ROOT)
+{
+
+    $xml = simplexml_load_file($filename) or die("cannot load file");
+    $currencies = array();
+
+    //Pull each currency code into an array
+    foreach ($xml->currency as $currency) {
+        if ($currency["live"] == 1) {
+            $code = $currency->code;
+            array_push($currencies, $code);
+        }
     }
 
     return $currencies;
@@ -203,7 +220,10 @@ function check_query_string($get)
     }
 
     //check currencies are valid
-    if (!in_array($from, LIVE_CURRENCIES) or !in_array($to, LIVE_CURRENCIES)) {
+    //function to determine whether a currency is live from response.xml file
+
+    $live_currencies = get_array_of_live_currencies();
+    if (!in_array($from, $live_currencies) or !in_array($to, $live_currencies)) {
         return "1200";
     }
 

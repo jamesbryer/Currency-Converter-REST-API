@@ -3,7 +3,16 @@ include "../functions.php";
 include "functions.php";
 include "../conf.php";
 
-//todo: add error handling etc 
+
+//check for errors in query string
+$error_code = check_update_query_string($_GET);
+
+//if there is an error within the query string, build and display error
+if ($error_code != null) {
+    //output response of create_error function in format described by query string
+    output_response("xml", create_error($error_code));
+    exit(); //exit to stop script running
+}
 
 if ($_GET["action"] == "put") {
     output_response($_GET["format"], build_put_response($_GET["cur"], $_GET["action"]));

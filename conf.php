@@ -37,5 +37,12 @@ define("ERROR_CODES_AND_MESSAGES", array(
     "1200" => "Currency type not recognised",
     "1300" => "Currency type must be a decimal number",
     "1400" => "Format must be xml or json",
-    "1500" => "Error in service"
+    "1500" => "Error in service",
+    "2000" => "Action not recognised or it is missing",
+    "2100" => "Currency code in wrong format or is missing",
+    "2200" => "Currency code not found for update",
+    "2300" => "No rate listed for this currency",
+    "2400" => "Cannot update base currency"
 ));
+
+define("UPDATE_ACTIONS", array("post", "put", "del"));

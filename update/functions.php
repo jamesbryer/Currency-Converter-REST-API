@@ -1,4 +1,5 @@
 <?php
+include "../conf.php";
 
 function build_put_response($currency_code)
 {
@@ -167,5 +168,31 @@ function post_delete_method($currency_code, $action) // function to change "live
         }
     } else {
         $error = true;
+    }
+}
+
+function check_update_query_string()
+{
+    if (!in_array($_GET["action"], UPDATE_ACTIONS)) {
+        return "2000";
+    }
+
+    if (!strlen($_GET["cur"]) == 3 and !ctype_upper($_GET["cur"]) and !is_numeric($_GET["cur"])) {
+        return "2100";
+    }
+
+    if (!in_array($_GET["cur"], get_array_of_currencies(OUTPUT_FILENAME_UPDATE))) {
+        return "2200";
+    }
+
+    $xml = simplexml_load_file(OUTPUT_FILENAME_UPDATE) or die("cannot load file");
+    foreach ($xml->currency as $currency) {
+        if ($currency["rate"] == null) {
+            return "2300";
+        }
+    }
+
+    if ($_GET["cur"] == BASE_CURRENCY) {
+        return "2400";
     }
 }
