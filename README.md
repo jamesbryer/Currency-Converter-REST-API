@@ -1,1 +1,1 @@
-# To access the frontend, load the update page with no query string
+# To access the frontend (part-c of assignment), load the update page with no query string

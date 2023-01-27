@@ -2,11 +2,6 @@
 
 include "conf.php";
 
-//for index.html - allows the function to be called from the index page
-if (isset($_POST['function']) && $_POST['function'] == 'check_base_files') {
-    $parameter = $_POST['parameter'];
-    check_base_files($parameter);
-}
 
 //checks timestamp of rates, if over 12 hours old returns true
 function check_rates_age($xml)
@@ -27,14 +22,17 @@ function update_rates($xml, $rates, $output = OUTPUT_FILENAME_ROOT)
     foreach ($xml->currency as $currency) {
         foreach ($rates as $code => $rate) {
             if ($code == $currency->code) {
+                //sets rate in response.xml to rate from API data
                 $currency["rate"] = $rate;
+                //breaks out of inner loop
                 break;
             }
         }
     }
+    //updates timestamp in response.xml
     $xml["timestamp"] = time();
+    //saves updated xml file
     $xml->asXML($output);
-    //echo "Rates updated!";
 }
 
 //calls fixer api to obtain rates - returns decoded JSON string
@@ -66,12 +64,11 @@ function call_api()
     return $rates;
 }
 
-//creates xml file response.xml using iso_4217.xml 
+//creates xml file response.xml using iso_4217.xml obtained from webpage so as to always get most up to date list of currencies
+//iso_4217.xml is not saved to server, only used to create response.xml
 function build_xml($rates, $output_filename)
 {
     //A script to check whether the output XML files exists and create it if it does not using the ISO file
-    //UPDATE IN FINAL TO IF FILE DOESNT EXIST !!!! ONLY RUNNING LIKE THIS FOR TESTING
-
     $xml = simplexml_load_file(ISO_FILE_URL);
 
     // Create a new dom document with pretty formatting
@@ -153,7 +150,6 @@ function build_xml($rates, $output_filename)
     $handle = fopen($output_filename, "w");
     fwrite($handle, $strxml);
     fclose($handle);
-    //echo "Rates updated!";
 }
 
 //returns array of ALL currency codes
@@ -163,7 +159,7 @@ function get_array_of_currencies($filename = OUTPUT_FILENAME_ROOT)
     $xml = simplexml_load_file($filename);
     $currencies = array();
 
-    //Pull each currency code into an array
+    //Push each currency code into an array
     foreach ($xml->currency as $currency) {
         $code = $currency->code;
         array_push($currencies, $code);
@@ -172,6 +168,7 @@ function get_array_of_currencies($filename = OUTPUT_FILENAME_ROOT)
     return $currencies;
 }
 
+//returns array of LIVE currency codes
 function get_array_of_live_currencies($filename = OUTPUT_FILENAME_ROOT)
 {
 
@@ -192,8 +189,6 @@ function get_array_of_live_currencies($filename = OUTPUT_FILENAME_ROOT)
 //checks query string for API for validation
 function check_query_string($get)
 {
-    //$params = array("to", "from", "amnt", "format");
-
     //check all required parameters are set
     if (!isset($get["from"]) or !isset($get["to"]) or !isset($get["amnt"])) {
         return "1000";
@@ -203,16 +198,14 @@ function check_query_string($get)
     $to = strtoupper($get["to"]);
     $amount = $get["amnt"];
 
-    //check all paramters are valid
+    //check all paramters are valid - looks at array const of allowed params in conf.php
     foreach ($get as $param => $value) {
         if (!in_array($param, PARAMS)) {
             return "1100";
         }
     }
 
-    //check currencies are valid
-    //function to determine whether a currency is live from response.xml file
-
+    //check currencies are live
     $live_currencies = get_array_of_live_currencies();
     if (!in_array($from, $live_currencies) or !in_array($to, $live_currencies)) {
         return "1200";
@@ -247,13 +240,10 @@ function create_error($error_code)
     //create error message element
     $msg_element = $doc->createElement("msg", ERROR_CODES_AND_MESSAGES[$error_code]);
     $msg_element = $error_element->appendChild($msg_element);
-    //set format to xml (default) if there's a format error
-
-    //pass document and format to response function to display
     return $doc;
 }
 
-//prints either json or xml according to input 
+//outputs a doc as either json or xml according to param set in query string
 function output_response($format, $doc)
 {
     if ($format == "json") {
@@ -261,12 +251,13 @@ function output_response($format, $doc)
         $json = new SimpleXMLElement($doc->saveXML());
         $json_response = json_encode(array("conv" => $json), JSON_PRETTY_PRINT);
         echo $json_response;
-    } else if ($format = "xml") {
+    } else if ($format = "xml") { //all other formats are xml - whether specifically set in query string or not
         header('Content-Type: text/xml');
         echo $doc->saveXML();
     }
 }
 
+//function to check response.xml exists, if it does not then create it - also updates rates if over 12 hours old
 function check_base_files($filename = OUTPUT_FILENAME_ROOT)
 {
     //if the files doesn't exist - build it

@@ -1,5 +1,6 @@
 var url;
 
+//function to populate the dropdown with live currencies using data from response.xml file
 function populateDropdown() {
   //remove all existing options - only needed for refreshes after submit button pressed
   var select = document.getElementById("dropdown");
@@ -13,7 +14,9 @@ function populateDropdown() {
     if (this.readyState == 4 && this.status == 200) {
       var xmlDoc = this.responseXML;
       var records = xmlDoc.getElementsByTagName("currency");
+      //loop through each currency
       for (var i = 0; i < records.length; i++) {
+        //if currency is live get data from it and add an option tag to dropdown
         if (records[i].getAttribute("live") == 1) {
           var specificChild =
             records[i].getElementsByTagName("code")[0].childNodes[0].nodeValue;
@@ -30,10 +33,11 @@ function populateDropdown() {
   //prevents caching so dropdown populates with correct data on reload
   xhttp.setRequestHeader("Cache-Control", "no-cache, no-store, max-age=0");
   xhttp.send();
+  //log to the console to show that the function has been called
   console.log("populateDropdown() called");
 }
 
-// do AJAX - it ain't rocket science
+//function to send request to URL set in parameter
 function loadDoc(url) {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function () {
@@ -46,11 +50,13 @@ function loadDoc(url) {
   xhttp.send();
 }
 
+//send request to URL set by html form in index.php
 function sendRequest(code, action) {
   url = "index.php?cur=" + code + "&" + "action=" + action;
   loadDoc(url);
 }
 
+//function to retrieve the selected value from the radio button selected
 function getSelectedRadio() {
   var selectedValue;
   var radioButtons = document.getElementsByName("radio");
@@ -64,6 +70,7 @@ function getSelectedRadio() {
   return selectedValue;
 }
 
+//function to retrieve the selected value from the dropdown - pretty simple stuff really!
 function getSelectedCur() {
   var selectedCur = document.getElementById("dropdown").value;
   console.log(selectedCur);

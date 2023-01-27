@@ -17,6 +17,7 @@ if (!empty($_GET)) {
     exit(); //exit to stop script running
   }
 
+  //use action type set in query string to determine what to do
   if ($_GET["action"] == "put") {
     output_response($_GET["format"], build_put_response($_GET["cur"], $_GET["action"]));
   }

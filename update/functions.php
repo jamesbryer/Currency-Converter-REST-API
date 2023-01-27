@@ -119,8 +119,6 @@ function build_post_response($currency_code)
     $loc_element = $put_response->createElement("loc", $old_rates_info["loc"]);
     $loc_element = $curr_element->appendChild($loc_element);
 
-
-
     return $put_response;
 }
 
@@ -173,21 +171,27 @@ function post_delete_method($currency_code, $action) // function to change "live
 
 function check_update_query_string()
 {
+    // return error if action set is not valid
     if (!in_array($_GET["action"], UPDATE_ACTIONS)) {
         return "2000";
     }
 
+    //return error if currency code is not 3 letters
     if (!strlen($_GET["cur"]) == 3 and !ctype_upper($_GET["cur"]) and !is_numeric($_GET["cur"])) {
         return "2100";
     }
 
+    //return error if currency code not live/real
     if (!in_array($_GET["cur"], get_array_of_live_currencies(OUTPUT_FILENAME_UPDATE))) {
+        //bit of housekeeping - allows codes that exist to be set to "live" using POST method
         if ($_GET["action"] == "post" and in_array($_GET["cur"], get_array_of_currencies(OUTPUT_FILENAME_UPDATE))) {
             $true = true;
         } else {
             return "2200";
         }
     }
+
+    //checks there is a rate for selected currency
     $xml = simplexml_load_file(OUTPUT_FILENAME_UPDATE) or die("cannot load file");
     foreach ($xml->currency as $currency) {
         if ($currency["rate"] == null) {
@@ -195,6 +199,7 @@ function check_update_query_string()
         }
     }
 
+    //stops API from editing base currency
     if ($_GET["cur"] == BASE_CURRENCY) {
         return "2400";
     }
