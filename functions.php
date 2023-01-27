@@ -66,27 +66,13 @@ function call_api()
     return $rates;
 }
 
-//function to check whether ISO file exists - if it doesn't, download it - checks whether response.xml exists returns boolean value for this
-function check_files_exist()
-{
-    //Try to load the file, if the file does not exist, download it from the url 
-    if (!file_exists(ISO_FILENAME)) {
-        file_put_contents(ISO_FILENAME, file_get_contents(ISO_FILE_URL));
-        return false;
-    } elseif (!file_exists(OUTPUT_FILENAME_ROOT)) {
-        return false;
-    } else {
-        return true;
-    }
-}
-
 //creates xml file response.xml using iso_4217.xml 
-function build_xml($rates)
+function build_xml($rates, $output_filename)
 {
     //A script to check whether the output XML files exists and create it if it does not using the ISO file
     //UPDATE IN FINAL TO IF FILE DOESNT EXIST !!!! ONLY RUNNING LIKE THIS FOR TESTING
 
-    $xml = simplexml_load_file(ISO_FILENAME);
+    $xml = simplexml_load_file(ISO_FILE_URL);
 
     // Create a new dom document with pretty formatting
     $doc = new DomDocument();
@@ -164,7 +150,7 @@ function build_xml($rates)
     }
 
     $strxml = $doc->saveXML();
-    $handle = fopen(OUTPUT_FILENAME_ROOT, "w");
+    $handle = fopen($output_filename, "w");
     fwrite($handle, $strxml);
     fclose($handle);
     //echo "Rates updated!";
@@ -284,11 +270,9 @@ function output_response($format, $doc)
 function check_base_files($filename = OUTPUT_FILENAME_ROOT)
 {
     //if the files doesn't exist - build it
-    if (!check_files_exist()) {
+    if (!file_exists($filename)) {
         $rates = call_api();
-        build_xml($rates);
-        //reload string after rebuild!
-        $xml = simplexml_load_file($filename);
+        build_xml($rates, $filename);
     } else {
         //check age of rates and update if neccessary
         $xml = simplexml_load_file($filename);

@@ -1,18 +1,5 @@
 var url;
 
-function checkFiles() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.open("POST", "functions.php", true);
-  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-  xhttp.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 200) {
-      // Handle the response here
-      console.log(this.responseText);
-    }
-  };
-  xhttp.send("function=check_base_files&parameter=OUTPUT_FILENAME_UPDATE");
-}
-
 function populateDropdown() {
   //remove all existing options - only needed for refreshes after submit button pressed
   var select = document.getElementById("dropdown");
@@ -60,7 +47,7 @@ function loadDoc(url) {
 }
 
 function sendRequest(code, action) {
-  url = "part_b.php?cur=" + code + "&" + "action=" + action;
+  url = "index.php?cur=" + code + "&" + "action=" + action;
   loadDoc(url);
 }
 

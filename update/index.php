@@ -5,8 +5,35 @@ include "../conf.php";
 
 //check files exist - if they don't, make them
 check_base_files(OUTPUT_FILENAME_UPDATE);
-?>
 
+if (!empty($_GET)) {
+  //check for errors in query string
+  $error_code = check_update_query_string($_GET);
+
+  //if there is an error within the query string, build and display error
+  if ($error_code != null) {
+    //output response of create_error function in format described by query string
+    output_response("xml", create_error($error_code));
+    exit(); //exit to stop script running
+  }
+
+  if ($_GET["action"] == "put") {
+    output_response($_GET["format"], build_put_response($_GET["cur"], $_GET["action"]));
+  }
+
+  if ($_GET["action"] == "post") {
+    post_delete_method($_GET["cur"], $_GET["action"]);
+    output_response($_GET["format"], build_post_response($_GET["cur"], $_GET["action"]));
+  }
+
+  if ($_GET["action"] == "del") {
+    post_delete_method($_GET["cur"], $_GET["action"]);
+    output_response($_GET["format"], build_delete_response($_GET["cur"], $_GET["action"]));
+  }
+}
+
+//if no query string exists - load front-end
+if (empty($_GET)) : ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,7 +53,7 @@ check_base_files(OUTPUT_FILENAME_UPDATE);
     <script src="scripts.js"></script>
 </head>
 
-<body onload="checkFiles();populateDropdown();">
+<body onload="populateDropdown();">
     <select id="dropdown" name="Currency"></select>
     <input type="radio" name="radio" value="post" /> Post
     <input type="radio" name="radio" value="put" /> Put
@@ -37,10 +64,10 @@ check_base_files(OUTPUT_FILENAME_UPDATE);
     </button>
     <p />
     <textarea id="xml_text"></textarea>
-    <h1>
-        NOTE: TO TEST UPDATE WITHOUT PART C - USE THE URL<a
-            href="http://localhost/atwd1/assignment/update/part_b.php">http://localhost/atwd1/assignment/update/part_b.php</a>
-    </h1>
+    <h3>To test part-b without the frontend, just add a query string! The front end will dissapear and raw XML will be
+        displayed :)</h3>
 </body>
 
 </html>
+
+<?php endif; ?>

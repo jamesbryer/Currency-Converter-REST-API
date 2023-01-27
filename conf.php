@@ -31,6 +31,8 @@ define("OUTPUT_FILENAME_ROOT", "response.xml");
 
 define("ISO_FILENAME", "iso_4217.xml");
 
+define("ISO_FILENAME_UPDATE", "../iso_4217.xml");
+
 define("ERROR_CODES_AND_MESSAGES", array(
     "1000" => "Required parameter is missing",
     "1100" => "Parameter not recognised",

@@ -2,17 +2,12 @@
 include "conf.php";
 require "functions.php";
 
-
-//$amount = $_GET["amnt"];
-
 if (!isset($_GET["format"])) {
     $_GET["format"] = "xml";
 }
 
 check_base_files();
 $xml = simplexml_load_file(OUTPUT_FILENAME_ROOT) or die("Cannot load file");
-
-
 
 //setting rates from query string codes
 foreach ($xml->currency as $currency) {
