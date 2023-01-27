@@ -1,5 +1,12 @@
 <?php
 
+include "conf.php";
+
+//for index.html - allows the function to be called from the index page
+if (isset($_POST['function']) && $_POST['function'] == 'check_base_files') {
+    $parameter = $_POST['parameter'];
+    check_base_files($parameter);
+}
 
 //checks timestamp of rates, if over 12 hours old returns true
 function check_rates_age($xml)
@@ -62,13 +69,11 @@ function call_api()
 //function to check whether ISO file exists - if it doesn't, download it - checks whether response.xml exists returns boolean value for this
 function check_files_exist()
 {
-    $iso_file = "iso_4217.xml";
-    $rates_file = "response.xml";
-    if (!file_exists($rates_file)) {
-        //Try to load the file, if the file does not exist, download it from the url 
-        if (!file_exists($iso_file)) {
-            file_put_contents($iso_file, file_get_contents(ISO_FILE_URL));
-        }
+    //Try to load the file, if the file does not exist, download it from the url 
+    if (!file_exists(ISO_FILENAME)) {
+        file_put_contents(ISO_FILENAME, file_get_contents(ISO_FILE_URL));
+        return false;
+    } elseif (!file_exists(OUTPUT_FILENAME_ROOT)) {
         return false;
     } else {
         return true;
@@ -273,5 +278,23 @@ function output_response($format, $doc)
     } else if ($format = "xml") {
         header('Content-Type: text/xml');
         echo $doc->saveXML();
+    }
+}
+
+function check_base_files($filename = OUTPUT_FILENAME_ROOT)
+{
+    //if the files doesn't exist - build it
+    if (!check_files_exist()) {
+        $rates = call_api();
+        build_xml($rates);
+        //reload string after rebuild!
+        $xml = simplexml_load_file($filename);
+    } else {
+        //check age of rates and update if neccessary
+        $xml = simplexml_load_file($filename);
+        if (check_rates_age($xml) == true) {
+            $rates = call_api();
+            update_rates($xml, $rates);
+        }
     }
 }

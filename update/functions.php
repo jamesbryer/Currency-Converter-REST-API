@@ -181,10 +181,13 @@ function check_update_query_string()
         return "2100";
     }
 
-    if (!in_array($_GET["cur"], get_array_of_currencies(OUTPUT_FILENAME_UPDATE))) {
-        return "2200";
+    if (!in_array($_GET["cur"], get_array_of_live_currencies(OUTPUT_FILENAME_UPDATE))) {
+        if ($_GET["action"] == "post" and in_array($_GET["cur"], get_array_of_currencies(OUTPUT_FILENAME_UPDATE))) {
+            $true = true;
+        } else {
+            return "2200";
+        }
     }
-
     $xml = simplexml_load_file(OUTPUT_FILENAME_UPDATE) or die("cannot load file");
     foreach ($xml->currency as $currency) {
         if ($currency["rate"] == null) {

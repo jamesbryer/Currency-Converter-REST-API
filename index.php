@@ -3,26 +3,15 @@ include "conf.php";
 require "functions.php";
 
 
-$amount = $_GET["amnt"];
+//$amount = $_GET["amnt"];
 
 if (!isset($_GET["format"])) {
     $_GET["format"] = "xml";
 }
 
-//if the files doesn't exist - build it
-if (!check_files_exist()) {
-    $rates = call_api();
-    build_xml($rates);
-    //reload string after rebuild!
-    $xml = simplexml_load_file("response.xml");
-} else {
-    //check age of rates and update if neccessary
-    $xml = simplexml_load_file("response.xml");
-    if (check_rates_age($xml) == true) {
-        $rates = call_api();
-        update_rates($xml, $rates);
-    }
-}
+check_base_files();
+$xml = simplexml_load_file(OUTPUT_FILENAME_ROOT) or die("Cannot load file");
+
 
 
 //setting rates from query string codes
@@ -62,7 +51,7 @@ if ($error_code != null) {
 
 //do currency conversion - round to 2dp
 $rate = $from_rate * $to_rate;
-$converted_value = round(($amount / $from_rate) * $to_rate, 2);
+$converted_value = round(($_GET["amnt"] / $from_rate) * $to_rate, 2);
 
 //retrieve timestamp and convert to a readable format
 $timestamp = gmdate("F j, Y, g:i:s a", intval($xml["timestamp"]));
@@ -84,7 +73,7 @@ $from_element = $sxe->addChild("from");
 $from_code_element = $from_element->addChild("code", $from_code);
 $from_currency_element = $from_element->addChild("curr", $from_currency_name);
 $from_loc_element = $from_element->addChild("loc", $from_currency_location);
-$from_amnt_element = $from_element->addChild("amnt", $amount);
+$from_amnt_element = $from_element->addChild("amnt", $_GET["amnt"]);
 
 $to_element = $sxe->addChild("to");
 $to_code_element = $to_element->addChild("code", $to_code);
