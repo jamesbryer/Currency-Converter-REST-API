@@ -2,7 +2,7 @@
 
 @date_default_timezone_set("GMT");
 
-define("CURRENCY_API_KEY", "Ra3niNeqTj1IWKnYIDkUTdaETgU2nV1x");
+define("CURRENCY_API_KEY", "your_api_key_here");
 define("BASE_CURRENCY", "GBP");
 define("API_ENDPOINT", "https://api.apilayer.com/fixer/latest?base=");
 define("ISO_FILE_URL", "https://www.six-group.com/dam/download/financial-information/data-center/iso-currrency/lists/list-one.xml");
