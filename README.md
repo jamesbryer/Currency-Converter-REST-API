@@ -7,4 +7,4 @@ Parameters Acceptable:
 - format (optional) : either xml or json, defaults to xml
 
 Errors are handled gracefully and will return an error code. 
-API key not included since 8.2.23 when repo gone public. 
+API key non functional, so don't try ;)
